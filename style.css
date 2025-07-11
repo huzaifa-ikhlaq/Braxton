@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+    --breakpoint-coxs: 23.4375rem;
+    /* 375px */
+    --breakpoint-sm: 36rem;
+    /* 576px */
+    --breakpoint-colg: 62rem;
+    /* 992px */
+    --breakpoint-xl: 75rem;
+    /* 1200px */
+    --breakpoint-coxl: 81.25rem;
+    /* 1300px */
+    --breakpoint-2xl: 87.5rem;
+    /* 1400px */
+}
+
+body {
+    font-family: Syne, sans-serif
+}
+
+.custom-animation-box {
+    animation: jump 0.5s linear infinite;
+}
+
+@keyframes jump {
+    17% {
+        border-bottom-right-radius: 10px;
+    }
+
+    25% {
+        transform: translateY(9px) rotate(22.5deg);
+    }
+
+    50% {
+        transform: translateY(18px) scale(1, 0.9) rotate(45deg);
+        border-bottom-right-radius: 40px;
+    }
+
+    75% {
+        transform: translateY(9px) rotate(67.5deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(90deg);
+
+    }
+}
+
+.custom-animation-shadow {
+    animation: shadow 0.5s linear infinite;
+}
+
+@keyframes shadow {
+    50% {
+        transform: scale(1.2, 1);
+    }
+}
+
+.scroll-hidden::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Target SVG only on hover */
+.icon-container:hover .icon-svg {
+    animation: bounce-twice 0.8s linear;
+}
+
+/* Bounce Keyframes */
+@keyframes bounce-twice {
+    0% {
+        transform: translateY(0);
+    }
+
+    33.33% {
+        transform: translateY(-16px);
+    }
+
+    63.33% {
+        transform: translateY(32px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
