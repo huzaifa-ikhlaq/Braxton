@@ -7,6 +7,8 @@
     /* 576px */
     --breakpoint-colg: 62rem;
     /* 992px */
+    --breakpoint-lg: 65.625rem;
+    /* 1050px */
     --breakpoint-xl: 75rem;
     /* 1200px */
     --breakpoint-coxl: 81.25rem;
@@ -17,6 +19,11 @@
 
 body {
     font-family: Syne, sans-serif
+}
+
+.input-tabular {
+    font-variant-numeric: tabular-nums;
+    font-family: 'Inter', sans-serif;
 }
 
 .custom-animation-box {
@@ -83,4 +90,40 @@ body {
     100% {
         transform: translateY(0);
     }
+}
+
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Custom Scrollbar for entire page */
+::-webkit-scrollbar {
+    width: 4px;
+    /* Vertical scrollbar */
+    height: 4px;
+    /* Horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #E4B8BF 0%, #CEC4EF 100%);
+    border-radius: 10px;
+}
+
+/* remove up and down no. sippner  */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }

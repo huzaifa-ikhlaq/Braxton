@@ -1,21 +1,21 @@
 // loading functionlaity 
 
-// let firstPage = document.querySelector('#first-page')
-// let mainPage = document.querySelector('#main-page')
-// let bgSvg1 = document.querySelector('#bg-svg')
+let firstPage = document.querySelector('#first-page')
+let mainPage = document.querySelector('#main-page')
+let bgSvg1 = document.querySelector('#bg-svg')
 
-// window.addEventListener('DOMContentLoaded', () => {
-//     setTimeout(() => {
-//         firstPage.classList.add('hidden')
-//         // main-page 
-//         mainPage.classList.remove('hidden')
-//         setTimeout(() => {
-//             // bg-svg
-//             bgSvg1.classList.remove('opacity-0')
-//             bgSvg1.classList.add('opacity-100')
-//         }, 800)
-//     }, 2000)
-// })
+window.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        firstPage.classList.add('hidden')
+        // main-page 
+        mainPage.classList.remove('hidden')
+        setTimeout(() => {
+            // bg-svg
+            bgSvg1.classList.remove('opacity-0')
+            bgSvg1.classList.add('opacity-100')
+        }, 800)
+    }, 2000)
+})
 
 // nav-items 
 let navItem1 = document.querySelector('#nav-item-1')
@@ -30,14 +30,14 @@ navItems.forEach(item => {
     item.addEventListener('click', () => {
         navItems.forEach(nav => {
             nav.classList.remove('border-[#595959]');
-            nav.classList.add('border-transparent'); // restore invisible border
+            nav.classList.add('border-transparent');
             const link = nav.querySelector('a');
             link.classList.remove('text-[#e9e9f1]');
             link.classList.add('text-[#8B8A91]');
         });
 
-        item.classList.remove('border-transparent'); // remove invisible border
-        item.classList.add('border-[#595959]'); // apply visible one
+        item.classList.remove('border-transparent');
+        item.classList.add('border-[#595959]');
         const currentLink = item.querySelector('a');
         currentLink.classList.remove('text-[#8B8A91]');
         currentLink.classList.add('text-[#e9e9f1]');
@@ -62,3 +62,49 @@ function changetheme() {
     }
     isSun = !isSun
 }
+
+// rollar 
+
+let lastScroll = window.scrollY;
+let rotation = 0;
+
+const circle = document.querySelector('.circle-rotate'); // We'll assign this class below
+
+window.addEventListener('scroll', () => {
+    const currentScroll = window.scrollY;
+
+    if (currentScroll > lastScroll) {
+        // Scrolling down → rotate right (clockwise)
+        rotation += 2;
+    } else {
+        // Scrolling up → rotate left (counter-clockwise)
+        rotation -= 2;
+    }
+
+    // Apply rotation
+    circle.style.transform = `rotate(${rotation}deg)`;
+
+    // Update scroll position
+    lastScroll = currentScroll;
+});
+
+// scroll animation 
+
+const revealElements = document.querySelectorAll('.reveal-on-scroll');
+
+function handleScrollReveal() {
+    const windowHeight = window.innerHeight;
+
+    revealElements.forEach((el) => {
+        const rect = el.getBoundingClientRect();
+
+        if (rect.top < windowHeight - 11) {
+            el.classList.add('visible');
+        } else {
+            el.classList.remove('visible'); // Important: this lets it animate again
+        }
+    });
+}
+
+window.addEventListener('scroll', handleScrollReveal);
+window.addEventListener('load', handleScrollReveal);

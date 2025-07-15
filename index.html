@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head class="pointer-events-none">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Braxton</title>
@@ -12,63 +12,63 @@
 
 </head>
 
-<body class="box-border m-0 p-0 bg-black">
+<body class="box-border m-0 p-0 bg-[#111111] ">
     <!-- <loading-page></loading-page>       -->
-    <!-- <div id="first-page" class="bg-black h-screen flex justify-center items-center"> 
+    <!-- <div id="first-page" class="bg-black h-screen flex justify-center items-center">
         <div style="background: linear-gradient(135deg, #E4B8BF 0%, #CEC4EF 100%);"
             class="custom-animation-box size-10 rounded-[10px] relative z-10"></div>
         <div class="custom-animation-shadow bg-black w-10 h-[5px] rounded-[50%] mt-2 relative z-0"></div>
     </div> -->
     <!-- <main-page></main-page> -->
-    <!-- <div id="main-page" class="hidden"> -->
-    <!-- <background-svg></background-svg> -->
-    <div id="bg-svg"
-        class="h-full w-full absolute -z-50  top-0  overflow-hidden transition-all duration-500 ease-linear  opacity0">
-        <!-- top-right-svg  -->
-        <svg class="size-80 md:size-116 xl:size-145 2xl:size-170 absolute -top-[15vh]  colg:-top-[17vh] xl:-top-[25vh] -right-[30vw] md:-right-[10vw] colg:-right-[8vw]  "
-            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1000 1000"
-            style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
-            <style type="text/css">
-                .bg01 {
-                    fill: url(#color-gradient);
-                }
-            </style>
-            <radialGradient id="color-gradient" cx="418.5665" cy="225.9685" r="499.9326" fx="866.8251" fy="4.6162"
-                gradientTransform="matrix(-0.6935 0.7207 -0.7207 -0.6935 953.1126 355.0528)"
-                gradientUnits="userSpaceOnUse">
-                <stop offset="0" style="stop-color:#CEC4EF"></stop>
-                <stop offset="1" style="stop-color:#CEC4EF;stop-opacity:0"></stop>
-            </radialGradient>
-            <circle class="bg01" cx="500" cy="500" r="500"></circle>
-        </svg>
-        <!-- bottom-left-svg  -->
-        <svg class=" size-[320px] md:size-[425px] absolute top-[60vh] md:top-[70vh] 2xl:top-[60vh] left-[-40vw] md:-left-[20vw]  colg:-left-[8vw] "
-            version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="429.6px" height="429.6px"
-            viewBox="0 0 429.6 429.6" style="enable-background:new 0 0 429.6 429.6;" xml:space="preserve">
-            <style type="text/css">
-                .bg02 {
-                    fill: url(#color-gradient-2);
-                }
-            </style>
-            <g id="Layer_1-2">
-                <radialGradient id="color-gradient-2" cx="2213.9312" cy="-11537.4219" r="214.85" fx="2393.6191"
-                    fy="-11419.6494"
-                    gradientTransform="matrix(1.902285e-02 0.9998 0.9998 -1.954636e-02 11706.5303 -2223.4016)"
+    <div id="main-page" class="hidde">
+        <!-- <background-svg></background-svg> -->
+        <div id="bg-svg"
+            class="h-full w-full absolute -z-50  top-0  overflow-hidden transition-all duration-500 ease-linear  opacity0 ">
+            <!-- top-right-svg  -->
+            <svg class="size-80 md:size-116 xl:size-145 2xl:size-170 absolute -top-[15vh]  colg:-top-[17vh] xl:-top-[25vh] -right-[30vw] md:-right-[10vw] colg:-right-[8vw]  "
+                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1000 1000"
+                style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+                <style type="text/css">
+                    .bg01 {
+                        fill: url(#color-gradient);
+                    }
+                </style>
+                <radialGradient id="color-gradient" cx="418.5665" cy="225.9685" r="499.9326" fx="866.8251" fy="4.6162"
+                    gradientTransform="matrix(-0.6935 0.7207 -0.7207 -0.6935 953.1126 355.0528)"
                     gradientUnits="userSpaceOnUse">
                     <stop offset="0" style="stop-color:#CEC4EF"></stop>
                     <stop offset="1" style="stop-color:#CEC4EF;stop-opacity:0"></stop>
                 </radialGradient>
-                <path class="bg02"
-                    d="M63,63C146.9-21,282.9-21,366.8,62.9s83.8,219.9-0.1,303.8s-219.9,83.9-303.8,0.1S-20.9,146.9,63,63z">
-                </path>
-            </g>
-        </svg>
-    </div>
+                <circle class="bg01" cx="500" cy="500" r="500"></circle>
+            </svg>
+            <!-- bottom-left-svg  -->
+            <svg class=" size-[320px] md:size-[425px] absolute top-[60vh] md:top-[70vh] 2xl:top-[60vh] left-[-40vw] md:-left-[20vw]  colg:-left-[8vw] "
+                version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="429.6px" height="429.6px"
+                viewBox="0 0 429.6 429.6" style="enable-background:new 0 0 429.6 429.6;" xml:space="preserve">
+                <style type="text/css">
+                    .bg02 {
+                        fill: url(#color-gradient-2);
+                    }
+                </style>
+                <g id="Layer_1-2">
+                    <radialGradient id="color-gradient-2" cx="2213.9312" cy="-11537.4219" r="214.85" fx="2393.6191"
+                        fy="-11419.6494"
+                        gradientTransform="matrix(1.902285e-02 0.9998 0.9998 -1.954636e-02 11706.5303 -2223.4016)"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0" style="stop-color:#CEC4EF"></stop>
+                        <stop offset="1" style="stop-color:#CEC4EF;stop-opacity:0"></stop>
+                    </radialGradient>
+                    <path class="bg02"
+                        d="M63,63C146.9-21,282.9-21,366.8,62.9s83.8,219.9-0.1,303.8s-219.9,83.9-303.8,0.1S-20.9,146.9,63,63z">
+                    </path>
+                </g>
+            </svg>
+        </div>
 
-    <section>
-        <div class="grid grid-cols-5">
+        <section class="colg:pl-90  2xl:pl-120 ">
+            <!-- <profile-side-block></profile-side-block> -->
             <sideblock
-                class="grid-cols-2  bg-[#161616] border border-[#303033] flex flex-col justify-between h-[80%] colg:h-[90%] rounded-[31px] 2xl:rounded-[3rem] overflow-y-scroll scroll-hidden relative colg:fixed  max-md:mx-3.5 max-md:mt-3.5 max-colg:mx-15 max-colg:mt-7.5  left-8 top-8 2xl:left-19.5 2xl:top-9 2xl:bottom-12 p-7 2xl:py-8 2xl:px-12.5 colg:gap-5  ">
+                class="bg-[#161616]  border border-[#303033] flex flex-col justify-between h-[80%] colg:h-[86%] rounded-[31px] 2xl:rounded-[34px] overflow-y-scroll scroll-hidden relative colg:fixed  max-md:mx-3.5 max-md:mb-15 max-md:mt-3.5 max-colg:mx-15 max-colg:mb-[75px] max-colg:mt-7.5  colg:left-8 colg:top-8 2xl:left-19.5 2xl:top-12 2xl:bottom-13 p-7 2xl:py-8 2xl:px-12.5 colg:gap-5  ">
                 <div class="max-md:mb-8 max-colg:mb-11">
                     <div class="flex items-center mb-5 ">
                         <!-- logo-svg  -->
@@ -105,7 +105,7 @@
                         </h1>
                     </div>
                     <div class="flex items-center justify-center">
-                        <img class="rounded-[31px] mb-2 colg:size-65  " src="img-5/img1.webp" alt="">
+                        <img class="rounded-[31px] mb-2 colg:size-65 2xl:size-75 " src="img-5/1.webp" alt="">
                     </div>
                 </div>
 
@@ -190,11 +190,1043 @@
                         Together!</button>
                 </div>
             </sideblock>
-        </div>
-    </section>
+            <!-- <main-content></main-content> -->
+            <section>
+                <!-- <nav></nav> -->
+                <nav class="px-7.5 xl:pl-7.5 xl:pr-15 2xl:pl-12.5 2xl:pr-20  
+              fixed z-50 colg:right-0 ">
+                    <div class="flex items-center justify-between mt-12.5 ">
+                        <!-- left-side  -->
+                        <div class="flex items-center justify-between ">
+                            <!-- nav-item-1  -->
+                            <div id="nav-item-1"
+                                class="border border-transparent backdrop-blur-[10px] transition-all duration-400 ease-linear rounded-full px-4 coxl:px-5 h-12.5 flex items-center justify-center  2xl:mr-2.5 shrink-0">
+                                <a class="text-[#8B8A91] transition-all duration-400 ease-linear hover:text-[#e9e9f1] font-bold max-xl:hidden"
+                                    href="#">Home</a>
+                                <a href="#" class="xl:hidden"><svg class="text-[#8B8A91] hover:text-[#e9e9f1] "
+                                        xmlns="http://www.w3.org/2000/svg" width="18px" height="18px"
+                                        viewBox="0 0 24 24">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2"
+                                            d="M21 19v-6.733a4 4 0 0 0-1.245-2.9L13.378 3.31a2 2 0 0 0-2.755 0L4.245 9.367A4 4 0 0 0 3 12.267V19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <!-- nav-item-2  -->
+                            <div id="nav-item-2"
+                                class="border border-transparent backdrop-blur-[10px]  transition-all duration-400 ease-linear rounded-full  px-4 coxl:px-5 h-12.5 flex items-center justify-center  2xl:mr-2.5 shrink-0">
+                                <a class="text-[#8B8A91]  transition-all duration-400 ease-linear hover:text-[#e9e9f1] font-bold max-xl:hidden"
+                                    href="#">Portfolio</a>
+                                <a href="#" class="xl:hidden"><svg class="text-[#8B8A91] hover:text-[#e9e9f1] "
+                                        xmlns="http://www.w3.org/2000/svg" width="18px" height="18px"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M10 13H3a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1v-7a1 1 0 0 0-1-1m-1 7H4v-5h5ZM21 2h-7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1m-1 7h-5V4h5Zm1 4h-7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1v-7a1 1 0 0 0-1-1m-1 7h-5v-5h5ZM10 2H3a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1M9 9H4V4h5Z" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <!-- nav-item-3 -->
+                            <div id="nav-item-3"
+                                class="border border-transparent backdrop-blur-[10px]  transition-all duration-400 ease-linear rounded-full  px-4 coxl:px-5 h-12.5 flex items-center justify-center  2xl:mr-2.5 shrink-0">
+                                <a class="text-[#8B8A91]  transition-all duration-400 ease-linear hover:text-[#e9e9f1] font-bold max-xl:hidden"
+                                    href="#">About Me</a>
+                                <a href="#" class="xl:hidden">
+                                    <svg class="text-[#8B8A91] hover:text-[#e9e9f1] " xmlns="http://www.w3.org/2000/svg"
+                                        width="18px" height="18px" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M15.71 12.71a6 6 0 1 0-7.42 0a10 10 0 0 0-6.22 8.18a1 1 0 0 0 2 .22a8 8 0 0 1 15.9 0a1 1 0 0 0 1 .89h.11a1 1 0 0 0 .88-1.1a10 10 0 0 0-6.25-8.19M12 12a4 4 0 1 1 4-4a4 4 0 0 1-4 4" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <!-- nav-item-4  -->
+                            <div id="nav-item-4"
+                                class="border border-transparent backdrop-blur-[10px]  transition-all duration-400 ease-linear rounded-full  px-4 coxl:px-5 h-12.5 flex items-center justify-center  2xl:mr-2.5 shrink-0">
+                                <a class="text-[#8B8A91]  transition-all duration-400 ease-linear hover:text-[#e9e9f1] font-bold max-xl:hidden"
+                                    href="#">Resume</a>
+                                <a href="#" class="xl:hidden">
+                                    <svg class="text-[#8B8A91] hover:text-[#e9e9f1] " xmlns="http://www.w3.org/2000/svg"
+                                        width="18px" height="18px" viewBox="0 0 24 24">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2"
+                                            d="M20.002 11v-1c0-3.771 0-5.657-1.24-6.828C17.52 2 15.524 2 11.532 2h-1.06c-3.993 0-5.99 0-7.23 1.172S2.002 6.229 2.002 10v4c0 3.771 0 5.657 1.24 6.828S6.48 22 10.472 22h.53m-4-15h8m-8 5h8m5.86 2.44l.695.692a1.497 1.497 0 0 1 0 2.121l-3.638 3.696a2 2 0 0 1-1.05.551l-2.254.488a.5.5 0 0 1-.597-.593l.48-2.235c.074-.397.267-.762.554-1.047l3.683-3.674a1.507 1.507 0 0 1 2.127 0"
+                                            color="currentColor" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <!-- nav-item-5 -->
+                            <div id="nav-item-5"
+                                class="border border-transparent backdrop-blur-[10px]  transition-all duration-400 ease-linear rounded-full  px-5 h-12.5 flex items-center justify-center shrink-0">
+                                <a class="text-[#8B8A91]  transition-all duration-400 ease-linear hover:text-[#e9e9f1] font-bold max-xl:hidden"
+                                    href="#">Contact</a>
+                                <a href="#" class="xl:hidden">
+                                    <svg class="text-[#8B8A91] hover:text-[#e9e9f1] " xmlns="http://www.w3.org/2000/svg"
+                                        width="18px" height="18px" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M19 7H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2m-9.684 7.316l1.602 1.4c.305.266.691.398 1.082.398s.777-.133 1.082-.398l1.602-1.4l-.037.037l3.646 3.646H5.707l3.646-3.646zM5 17.293V10.54l3.602 3.151zm10.398-3.602L19 10.54v6.75zM19 9v.21l-6.576 5.754a.68.68 0 0 1-.848 0L5 9.21V9z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- right-side  -->
+                        <div class="flex items-center   gap-2 relative shrink-0 ">
+                            <div id="containerOfSunMoon"
+                                class="backdrop-blur-[10px] size-12.5 rounded-full flex justify-center items-center">
+                                <!-- <sun-svg> -->
+                                <svg id="sun"
+                                    class="text-[#8B8A91] cursor-pointer  transition-all duration-400 ease-linear hover:text-white "
+                                    xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 16 16">
+                                    <path fill="currentColor"
+                                        d="M8 12a4 4 0 1 1 0-8a4 4 0 0 1 0 8m0-1.5a2.5 2.5 0 1 0 0-5a2.5 2.5 0 0 0 0 5m5.657-8.157a.75.75 0 0 1 0 1.061l-1.061 1.06a.749.749 0 0 1-1.275-.326a.75.75 0 0 1 .215-.734l1.06-1.06a.75.75 0 0 1 1.06 0Zm-9.193 9.193a.75.75 0 0 1 0 1.06l-1.06 1.061a.75.75 0 1 1-1.061-1.06l1.06-1.061a.75.75 0 0 1 1.061 0M8 0a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0V.75A.75.75 0 0 1 8 0M3 8a.75.75 0 0 1-.75.75H.75a.75.75 0 0 1 0-1.5h1.5A.75.75 0 0 1 3 8m13 0a.75.75 0 0 1-.75.75h-1.5a.75.75 0 0 1 0-1.5h1.5A.75.75 0 0 1 16 8m-8 5a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 8 13m3.536-1.464a.75.75 0 0 1 1.06 0l1.061 1.06a.75.75 0 0 1-1.06 1.061l-1.061-1.06a.75.75 0 0 1 0-1.061M2.343 2.343a.75.75 0 0 1 1.061 0l1.06 1.061a.75.75 0 0 1-.018 1.042a.75.75 0 0 1-1.042.018l-1.06-1.06a.75.75 0 0 1 0-1.06Z" />
+                                </svg>
+                                <!-- <moon-svg> -->
+                                <svg id="moon" class="hidden cursor-pointer" xmlns="http://www.w3.org/2000/svg"
+                                    width="18px" height="18px" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-dasharray="4" stroke-dashoffset="4"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+                                        <path d="M13 4h1.5M13 4h-1.5M13 4v1.5M13 4v-1.5">
+                                            <animate id="lineMdMoonAltLoop0" fill="freeze"
+                                                attributeName="stroke-dashoffset"
+                                                begin="0.7s;lineMdMoonAltLoop0.begin+6s" dur="0.4s" values="4;0" />
+                                            <animate fill="freeze" attributeName="stroke-dashoffset"
+                                                begin="lineMdMoonAltLoop0.begin+2s;lineMdMoonAltLoop0.begin+4s"
+                                                dur="0.4s" values="4;0" />
+                                            <animate fill="freeze" attributeName="stroke-dashoffset"
+                                                begin="lineMdMoonAltLoop0.begin+1.2s;lineMdMoonAltLoop0.begin+3.2s;lineMdMoonAltLoop0.begin+5.2s"
+                                                dur="0.4s" values="0;4" />
+                                            <set fill="freeze" attributeName="d" begin="lineMdMoonAltLoop0.begin+1.8s"
+                                                to="M12 5h1.5M12 5h-1.5M12 5v1.5M12 5v-1.5" />
+                                            <set fill="freeze" attributeName="d" begin="lineMdMoonAltLoop0.begin+3.8s"
+                                                to="M12 4h1.5M12 4h-1.5M12 4v1.5M12 4v-1.5" />
+                                            <set fill="freeze" attributeName="d" begin="lineMdMoonAltLoop0.begin+5.8s"
+                                                to="M13 4h1.5M13 4h-1.5M13 4v1.5M13 4v-1.5" />
+                                        </path>
+                                        <path d="M19 11h1.5M19 11h-1.5M19 11v1.5M19 11v-1.5">
+                                            <animate id="lineMdMoonAltLoop1" fill="freeze"
+                                                attributeName="stroke-dashoffset"
+                                                begin="1.1s;lineMdMoonAltLoop1.begin+6s" dur="0.4s" values="4;0" />
+                                            <animate fill="freeze" attributeName="stroke-dashoffset"
+                                                begin="lineMdMoonAltLoop1.begin+2s;lineMdMoonAltLoop1.begin+4s"
+                                                dur="0.4s" values="4;0" />
+                                            <animate fill="freeze" attributeName="stroke-dashoffset"
+                                                begin="lineMdMoonAltLoop1.begin+1.2s;lineMdMoonAltLoop1.begin+3.2s;lineMdMoonAltLoop1.begin+5.2s"
+                                                dur="0.4s" values="0;4" />
+                                            <set fill="freeze" attributeName="d" begin="lineMdMoonAltLoop1.begin+1.8s"
+                                                to="M17 11h1.5M17 11h-1.5M17 11v1.5M17 11v-1.5" />
+                                            <set fill="freeze" attributeName="d" begin="lineMdMoonAltLoop1.begin+3.8s"
+                                                to="M18 12h1.5M18 12h-1.5M18 12v1.5M18 12v-1.5" />
+                                            <set fill="freeze" attributeName="d" begin="lineMdMoonAltLoop1.begin+5.8s"
+                                                to="M19 11h1.5M19 11h-1.5M19 11v1.5M19 11v-1.5" />
+                                        </path>
+                                        <path d="M19 4h1.5M19 4h-1.5M19 4v1.5M19 4v-1.5">
+                                            <animate id="lineMdMoonAltLoop2" fill="freeze"
+                                                attributeName="stroke-dashoffset" begin="2s;lineMdMoonAltLoop2.begin+6s"
+                                                dur="0.4s" values="4;0" />
+                                            <animate fill="freeze" attributeName="stroke-dashoffset"
+                                                begin="lineMdMoonAltLoop2.begin+2s" dur="0.4s" values="4;0" />
+                                            <animate fill="freeze" attributeName="stroke-dashoffset"
+                                                begin="lineMdMoonAltLoop2.begin+1.2s;lineMdMoonAltLoop2.begin+3.2s"
+                                                dur="0.4s" values="0;4" />
+                                            <set fill="freeze" attributeName="d" begin="lineMdMoonAltLoop2.begin+1.8s"
+                                                to="M20 5h1.5M20 5h-1.5M20 5v1.5M20 5v-1.5" />
+                                            <set fill="freeze" attributeName="d" begin="lineMdMoonAltLoop2.begin+5.8s"
+                                                to="M19 4h1.5M19 4h-1.5M19 4v1.5M19 4v-1.5" />
+                                        </path>
+                                    </g>
+                                    <path fill="none" stroke="currentColor" stroke-dasharray="56" stroke-dashoffset="56"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M7 6 C7 12.08 11.92 17 18 17 C18.53 17 19.05 16.96 19.56 16.89 C17.95 19.36 15.17 21 12 21 C7.03 21 3 16.97 3 12 C3 8.83 4.64 6.05 7.11 4.44 C7.04 4.95 7 5.47 7 6 Z">
+                                        <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s"
+                                            values="56;0" />
+                                    </path>
+                                </svg>
+                            </div>
+                            <div style="background: linear-gradient(135deg, #E4B8BF 0%, #CEC4EF 100%);"
+                                class="h-12.5 flex justify-center items-center rounded-full w-[145px] cursor-pointer">
+                                <a class="flex items-center justify-center font-bold" href="#">Let's Talk <svg
+                                        class="ml-1.5 text-black" xmlns="http://www.w3.org/2000/svg" width="18px"
+                                        height="18px" viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M1.5 22.704V2h21v16H6.876zm2-4.408L6.124 16H20.5V4h-17zM13.004 11H11V8.996h2.004zm-5 0H6V8.996h2.004zm10 0H16V8.996h2.004z" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <!-- <hero-section></hero-section> -->
+                <section
+                    class="max-md:mx-3.5 max-colg:mx-15 xl:pl-7.5 xl:pr-15 2xl:pl-12.5 2xl:pr-20 colg:h-screen overflow-hidden">
+                    <div
+                        class="flex flex-col justify-end py-15 md:pt-[75px] md:pb-[75px] colg:pb-[105px] colg:h-screen ">
+                        <div
+                            class="reveal-on-scroll text-[#C7C6D3] bg-[#111111] text-[13px] h-[34px] font-bold inline-flex items-center justify-center border border-[#303033] rounded-full px-3.5 mb-[19px]  self-start">
+                            <span class="mr-2.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px"
+                                    viewBox="0 0 13 13" fill="currentColor">
+                                    <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"></path>
+                                </svg>
+                            </span>Let's meet!
+                        </div>
+                        <div class="">
+                            <h1
+                                class="reveal-on-scroll text-[34px] md:text-[50px] xl:text-[60px] 2xl:text-[70px] bg-gradient-to-tr from-[#E1BAC5] to-[#CEC4EF] bg-clip-text text-transparent font-bold leading-10 md:leading-15 xl:leading-17 2xl:leading-21">
+                                I'm Alex Walker <br>
+                                Digital designer and illustrator.
+                            </h1>
+                        </div>
+                        <div class="mt-12.5 flex colg:items-center max-colg:flex-col relative">
+                            <div class="flex items-center max-sm:flex-col">
+                                <!-- my-work  -->
+                                <a href="#"
+                                    class="reveal-on-scroll text-[#E9E9F1] max-colg:text-[#121319] bg-[#111111] max-colg:bg-gradient-to-br from-[#E4B8BF] to-[#CEC4EF] max-sm:w-full font-bold border border-[#4B4B51] transition-all hover:scale-102 h-12.5 w-[152px] rounded-[20px] inline-flex shrink-0 self-start items-center justify-center mr-2.5 max-sm:mb-2.5">My
+                                    Works <svg class="text-[#E9E9F1] max-colg:text-[#121319] ml-1.5"
+                                        xmlns="http://www.w3.org/2000/svg" width="18px" height="18px"
+                                        viewBox="0 0 24 24">
+                                        <path fill="currentColor"
+                                            d="M10 13H3a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1v-7a1 1 0 0 0-1-1m-1 7H4v-5h5ZM21 2h-7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1m-1 7h-5V4h5Zm1 4h-7a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1v-7a1 1 0 0 0-1-1m-1 7h-5v-5h5ZM10 2H3a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1M9 9H4V4h5Z"
+                                            fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="1" />
+                                    </svg>
+                                </a>
+                                <!-- Download-btn  -->
+                                <button
+                                    class="reveal-on-scroll font-bold h-12.5 w-[185px] max-sm:w-full text-[#E9E9F1] max-colg:border max-colg:border-[#4B4B51] rounded-[20px] inline-flex shrink-0 items-center justify-center self-start">Download
+                                    CV <svg class="ml-1.5" xmlns="http://www.w3.org/2000/svg" width="18px" height="50px"
+                                        viewBox="0 0 24 24">
+                                        <g fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="3">
+                                            <path d="M12 15V3m9 12v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                            <path d="m7 10l5 5l5-5" />
+                                        </g>
+                                    </svg>
+                                </button>
+                            </div>
+                            <!-- rollar  -->
+                            <div class="reveal-on-scroll flex justify-start colg:justify-end w-full ">
+                                <div
+                                    class="relative colg:absolute  max-colg:mt-13 colg:-bottom-10 colg:-right-1.5 w-36 h-36 flex items-center justify-center">
+                                    <!-- Rotating circular text -->
+                                    <div class="absolute w-full h-full circle-rotate">
+                                        <svg viewBox="0 0 100 100" class="w-full h-full">
+                                            <defs>
+                                                <path id="circlePath"
+                                                    d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" />
+                                            </defs>
+                                            <text font-size="8" font-weight="700" fill="#E9E9F1" letter-spacing="0.6">
+                                                <textPath href="#circlePath" startOffset="0%">
+                                                    * SCROLL FOR MORE * SCROLL FOR MORE
+                                                </textPath>
+                                            </text>
+                                        </svg>
+                                    </div>
 
-    <!-- </div> -->
-    <script src="script5.js"></script>
+                                    <!-- Center Arrow -->
+                                    <div class="z-10">
+                                        <svg class="w-6 h-6 text-[#E9E9F1]" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 16 16">
+                                            <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="2"
+                                                d="m3.25 8.75l4.5 4.5l4.5-4.5m-4.5-6v10.5" />
+                                        </svg>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- <section-2></section-2> -->
+                <section class="max-md:mx-3.5 max-colg:mx-15 xl:pl-7.5 xl:pr-15 2xl:pl-12.5 2xl:pr-20 ">
+                    <div class="py-15 md:py-[75px] ">
+                        <!-- heading  -->
+                        <div class="mb-3.5 md:mb-[19px] xl:mb-4 2xl:mb-1">
+                            <div
+                                class="reveal-on-scroll text-[#C7C6D3] bg-[#111111] text-[13px] h-[34px] font-bold inline-flex items-center justify-center border border-[#303033] rounded-full px-3.5 mb-[19px]  self-start">
+                                <span class="mr-2.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px"
+                                        viewBox="0 0 13 13" fill="currentColor">
+                                        <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                                           C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                                            C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z">
+                                        </path>
+                                    </svg>
+                                </span>Portfolio
+                            </div>
+                            <div class="">
+                                <h1
+                                    class="reveal-on-scroll text-[34px] md:text-[38px] xl:text-[46px] 2xl:text-[54px] bg-gradient-to-tr from-[#E1BAC5] to-[#CEC4EF] bg-clip-text text-transparent font-bold leading-8 md:leading-13 xl:leading-15 2xl:leading-17.5">
+                                    Check out my featured <br class="max-xl:hidden">
+                                    projects
+                                </h1>
+                            </div>
+                        </div>
+                        <!-- img  -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-[25px] 2xl:gap-x-[50px]">
+                            <!-- img-1  -->
+                            <div
+                                class="reveal-on-scroll mt-7.5 2xl:mt-12.5 rounded-[33px] relative z-0 transition-all duration-200 ease-linear hover:scale-103 overflow-hidden">
+                                <img class="transition-all duration-200 ease-linear w-full scale-111 hover:scale-100"
+                                    src="img-5/2.webp" alt="">
+                                <div class="absolute z-40 bottom-7.5 left-[25px] flex items-center">
+                                    <div
+                                        class="text-[#2D2E33] text-[15px] bg-[#FAFAFA] flex justify-center items-center rounded-[14px] h-[34px] px-3.5 mr-2.5">
+                                        Illustrations</div>
+                                    <div
+                                        class="text-[#2D2E33] text-[15px] font-mono  bg-[#FAFAFA] flex justify-center items-center rounded-[14px] h-[34px] px-3.5 shrink-0">
+                                        3D Render
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- img-2  -->
+                            <div
+                                class="reveal-on-scroll mt-7.5 2xl:mt-12.5 rounded-[33px] relative z-0 transition-all duration-200 ease-linear hover:scale-103 overflow-hidden">
+                                <img class="transition-all duration-200 ease-linear w-full scale-111 hover:scale-100"
+                                    src="img-5/3.webp" alt="">
+                                <div class="absolute z-40 bottom-7.5 left-[25px] flex items-center">
+                                    <div
+                                        class="text-[#D2D2D9] text-[15px] bg-[#111111] flex justify-center items-center rounded-[14px] h-[34px] px-3.5 mr-2.5">
+                                        UI Design</div>
+                                    <div
+                                        class="text-[#D2D2D9] text-[15px] bg-[#111111] flex justify-center items-center rounded-[14px] h-[34px] px-3.5 shrink-0">
+                                        Figma
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- img-3  -->
+                            <div
+                                class="reveal-on-scroll mt-7.5 2xl:mt-12.5 rounded-[33px] relative z-0 transition-all duration-200 ease-linear hover:scale-103 overflow-hidden">
+                                <img class="transition-all duration-200 ease-linear w-full scale-111 hover:scale-100"
+                                    src="img-5/4.webp" alt="">
+                                <div class="absolute z-40 bottom-7.5 left-[25px] flex items-center">
+                                    <div
+                                        class="text-[#D2D2D9] text-[15px] bg-[#111111] flex justify-center items-center rounded-[14px] h-[34px] px-3.5 mr-2.5">
+                                        Illustrations</div>
+                                    <div
+                                        class="text-[#D2D2D9] text-[15px] font-mono  bg-[#111111] flex justify-center items-center rounded-[14px] h-[34px] px-3.5 shrink-0">
+                                        3D Render
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- img-4  -->
+                            <div
+                                class="reveal-on-scroll mt-7.5 2xl:mt-12.5 rounded-[33px] relative z-0 transition-all duration-200 ease-linear hover:scale-103 overflow-hidden">
+                                <img class="transition-all duration-200 ease-linear w-full scale-111 hover:scale-100"
+                                    src="img-5/6.webp" alt="">
+                                <div class="absolute z-40 bottom-7.5 left-[25px] flex items-center">
+                                    <div
+                                        class="text-[#2D2E33] text-[15px] bg-[#FAFAFA] flex justify-center items-center rounded-[14px] h-[34px] px-3.5 mr-2.5">
+                                        Illustrations</div>
+                                    <div
+                                        class="text-[#2D2E33] text-[15px] bg-[#FAFAFA] flex justify-center items-center rounded-[14px] h-[34px] px-3.5 shrink-0">
+                                        AI Experiment
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- <section-3></section-3> -->
+                <section class="max-md:mx-3.5 max-colg:mx-15 xl:pl-7.5 xl:pr-15 2xl:pl-12.5 2xl:pr-20 ">
+                    <div class="py-15 md:py-[75px] ">
+                        <!-- heading  -->
+                        <div class="mb-3.5 md:mb-[19px] xl:mb-4 2xl:mb-1">
+                            <div
+                                class="reveal-on-scroll text-[#C7C6D3] bg-[#111111] text-[13px] h-[34px] font-bold inline-flex items-center justify-center border border-[#303033] rounded-full px-3.5 mb-[19px]  self-start">
+                                <span class="mr-2.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px"
+                                        viewBox="0 0 13 13" fill="currentColor">
+                                        <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                                           C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                                            C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z">
+                                        </path>
+                                    </svg>
+                                </span>About
+                            </div>
+                            <div class="">
+                                <h1
+                                    class="reveal-on-scroll text-[34px] md:text-[38px] xl:text-[46px] 2xl:text-[54px] bg-gradient-to-tr from-[#E1BAC5] to-[#CEC4EF] bg-clip-text text-transparent font-bold leading-8 md:leading-13 xl:leading-15 2xl:leading-17.5">
+                                    Turning complex problems <br class="max-xl:hidden"> into simple design
+                                </h1>
+                            </div>
+                        </div>
+                        <!-- box  -->
+                        <div
+                            class="grid grid-cols-1 md:grid-cols-3 itemscenter justify-between gap-x-[15px] 2xl:gap-x-[50px]">
+                            <!-- box-1  -->
+                            <div
+                                class="reveal-on-scroll bg-gradient-to-tr from-[#E1BAC5] to-[#CEC4EF] bg-clip-text text-transparent   border border-[#303033] rounded-[35px] flex flex-col items-center justify-center p-7.5  mt-7.5 2xl:mt-12.5 font-bold">
+                                <span class="text-[60px] xl:text-[70px] leading-none  -mt-2">40+</span>
+                                <span class=" text-base xl:text-lg text-[#E9E9F1] text-center mt-1.5">Happy
+                                    clients</span>
+                            </div>
+                            <!-- box-2  -->
+                            <div
+                                class="reveal-on-scroll bg-gradient-to-tr from-[#E1BAC5] to-[#CEC4EF] bg-clip-text text-transparent   border border-[#303033] rounded-[35px] flex flex-col items-center justify-center p-7.5  mt-7.5 2xl:mt-12.5 font-bold">
+                                <span class="text-[60px] xl:text-[70px] leading-none  -mt-2">2+</span>
+                                <span class=" text-base xl:text-lg text-[#E9E9F1] text-center mt-1.5">Years of
+                                    experience</span>
+                            </div>
+                            <!-- box-3  -->
+                            <div
+                                class="reveal-on-scroll bg-gradient-to-tr from-[#E1BAC5] to-[#CEC4EF] bg-clip-text text-transparent   border border-[#303033] rounded-[35px] flex flex-col items-center justify-center p-7.5  mt-7.5 2xl:mt-12.5 font-bold">
+                                <span class="text-[60px] xl:text-[70px] leading-none  -mt-2">50+</span>
+                                <span class=" text-base xl:text-lg text-[#E9E9F1] text-center mt-1.5">Projects
+                                    done</span>
+                            </div>
+                        </div>
+                        <!-- description  -->
+                        <div class="mt-7.5 xl:mt-12.5">
+                            <div class="flex max-xl:flex-col">
+                                <!-- left-side  -->
+                                <div class="  md:pr-[15px] pt-2.5 md:pt-5 2xl:pr-[25px] 2xl:pt-[9px]">
+                                    <p
+                                        class="text-[20px] 2xl:text-[22px] text-[#C7C6D3] font- mb-[15px] 2xl:mb-[21px] leading-7">
+                                        I wonder if I've been
+                                        changed in the night? Let me think. Was I the same when I
+                                        got up this morning? I almost think I can remember feeling a little different.
+                                        But if I'm not the same, the
+                                        <span class="border-b border-[#303033] cursor-pointer relative group">next
+                                            question
+                                            <span
+                                                class="absolute left-0 bottom-0 w-0 h-[1px] bg-gradient-to-tr from-[#E1BAC5] to-[#CEC4EF]  transition-all duration-500 ease-in-out group-hover:w-full">
+                                            </span>
+                                        </span>
+                                        is 'Who in the world am I?' Ah, that's the great puzzle!
+                                    </p>
+                                    <p class="text-[20px] 2xl:text-[22px] text-[#C7C6D3]  leading-7">Be what you would
+                                        seem
+                                        to be - or, if you'd like it put more simply - never
+                                        imagine yourself not to be otherwise than what it might appear to others that
+                                        what you were or
+                                        <span class="border-b border-[#303033] cursor-pointer relative group">might have
+                                            been
+                                            <span
+                                                class="absolute left-0 bottom-0 w-0 h-[1px] bg-gradient-to-tr from-[#E1BAC5] to-[#CEC4EF]  transition-all duration-500 ease-in-out group-hover:w-full">
+                                            </span>
+                                        </span> was not otherwise than what you had been would
+                                        have appeared to them to be otherwise.
+                                    </p>
+                                    <button
+                                        class="reveal-on-scroll font-bold  text-[#121319]  bg-gradient-to-tr from-[#E1BAC5] to-[#CEC4EF]  max-colg:border max-colg:border-[#4B4B51] rounded-[20px] inline-flex shrink-0 items-center justify-center h-12.5 w-[185px] max-sm:w-full self-start mt-[25px] 2xl:mt-[31px]">Download
+                                        CV <svg class="ml-1.5" xmlns="http://www.w3.org/2000/svg" width="18px"
+                                            height="50px" viewBox="0 0 24 24">
+                                            <g fill="none" stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="3">
+                                                <path d="M12 15V3m9 12v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                                <path d="m7 10l5 5l5-5" />
+                                            </g>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <!-- right-side  -->
+                                <div class="px-[15px] pt-[27px] 2xl:pt-[16px] 2xl:px-[25px]">
+                                    <div class="mb-[26px]">
+                                        <h6 class="text-[13px] text-[#C7C6D3]">Name</h6>
+                                        <h2 class="text-base 2xl:text-[18px] text-[#E9E9F1] font-bold">Alex Walker</h2>
+                                    </div>
+                                    <div class="mb-[26px]">
+                                        <h6 class="text-[13px] text-[#C7C6D3]">Phone</h6>
+                                        <div class="relative group w-[70%]">
+                                            <h2
+                                                class="text-base 2xl:text-[20px] font-mono text-[#E9E9F1] font-bold cursor-pointer">
+                                                +1 212-708-9400
+                                            </h2>
+                                            <span
+                                                class="absolute left-0 bottom-1 w-0 h-[1px] bg-gradient-to-tr from-[#E1BAC5] to-[#CEC4EF]  transition-all duration-500 ease-in-out group-hover:w-full"></span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-[26px]">
+                                        <h6 class="text-[13px] text-[#C7C6D3]">Email</h6>
+                                        <div class="relative group ">
+                                            <h2
+                                                class="text-base 2xl:text-[18px] text-[#E9E9F1] font-bold cursor-pointer">
+                                                hello@yourdomain.com</h2>
+                                            <span
+                                                class="absolute left-0 bottom-1 w-0 h-[1px] bg-gradient-to-tr from-[#E1BAC5] to-[#CEC4EF]  transition-all duration-500 ease-in-out group-hover:w-full"></span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-[26px]">
+                                        <h6 class="text-[13px] text-[#C7C6D3]">Location</h6>
+                                        <div class="relative group w-[65%]">
+                                            <h2
+                                                class="text-base 2xl:text-[18px] text-[#E9E9F1] font-bold cursor-pointer">
+                                                Odesa, Ukraine
+                                            </h2>
+                                            <span
+                                                class="absolute left-0 bottom-1 w-0 h-[1px] bg-gradient-to-tr from-[#E1BAC5] to-[#CEC4EF]  transition-all duration-500 ease-in-out group-hover:w-full"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- <section-4></section-4> -->
+                <section class="max-md:mx-3.5 max-colg:mx-15 xl:pl-7.5 xl:pr-15 2xl:pl-12.5 2xl:pr-20 ">
+                    <div class="py-15 md:py-[75px]">
+                        <div class="grid md:grid-cols-2 gap-x-7.5 2xl:gap-x-12.5">
+                            <!-- block-1  -->
+                            <div
+                                class="border border-[#303033] cursor-pointer rounded-[30px] relative h-[520px] 2xl:h-[620px] mt-7.5 2xl:mt-12.5  overflow-hidden">
+                                <div class="p-7.5 2xl:p-12.5">
+                                    <!-- heading  -->
+                                    <h2
+                                        class="text-[26px] 2xl:text-[30px] text-[#e9e9f1] font-bold leading-7 2xl:leading-9">
+                                        Frontend <br> development</h2>
+                                    <!-- button  -->
+                                    <div
+                                        class="flex colg:flex-col colg:items-start lg:flex-row  items-center mt-[13px]">
+                                        <div
+                                            class="text-[#D2D2D9] text-[15px] bg-[#111111] border border-[#303033] flex justify-center items-center rounded-[14px] h-[34px] px-3.5 mr-2.5 mb-[5px] shrink-0">
+                                            UI/UX Design</div>
+                                        <div
+                                            class="text-[#D2D2D9] text-[15px] bg-[#111111] border border-[#303033] flex justify-center items-center rounded-[14px] h-[34px] px-3.5  shrink-0">
+                                            Design to Code
+                                        </div>
+                                    </div>
+                                    <!-- paragragh  -->
+                                    <p class="text-lg text-[#C7C6D3] font-medium mt-[23px]">I work with HTML/CSS, Framer
+                                        and
+                                        WordPress.</p>
+                                </div>
+                                <div class="absolute left-0">
+                                    <img class="w-full" src="img-5/7.webp" alt="">
+                                </div>
+                            </div>
+                            <!-- block-2  -->
+                            <div
+                                class="border border-[#303033] cursor-pointer rounded-[30px] relative h-[520px] 2xl:h-[620px] mt-7.5 2xl:mt-12.5  overflow-hidden">
+                                <div class="p-7.5 2xl:p-12.5">
+                                    <!-- heading  -->
+                                    <h2
+                                        class="text-[26px] 2xl:text-[30px] text-[#e9e9f1] font-bold leading-7 2xl:leading-9">
+                                        Digital art and
+                                        <br>
+                                        graphic design
+                                    </h2>
+                                    <!-- button  -->
+                                    <div
+                                        class="flex colg:flex-col colg:items-start lg:flex-row  items-center mt-[13px]">
+                                        <div
+                                            class="text-[#D2D2D9] text-[15px] bg-[#111111] border border-[#303033] flex justify-center items-center rounded-[14px] h-[34px] px-3.5 mr-2.5 mb-[5px] shrink-0">
+                                            Illustrations</div>
+                                        <div
+                                            class="text-[#D2D2D9] text-[15px] bg-[#111111] border border-[#303033] flex justify-center items-center rounded-[14px] h-[34px] px-3.5  shrink-0">
+                                            AI Experiments
+                                        </div>
+                                    </div>
+                                    <!-- paragragh  -->
+                                    <p class="text-lg text-[#C7C6D3] font-medium mt-[23px]">I use Adobe Photoshop,
+                                        Fresco and Blender to create illustrations and 3D renders for my clients and
+                                        stocks.</p>
+                                </div>
+                                <div class="absolute left-0">
+                                    <img class="w-full" src="img-5/8.webp" alt="">
+                                </div>
+                            </div>
+                            <!-- block-3  -->
+                            <div
+                                class="border border-[#303033] cursor-pointer rounded-[30px] relative h-[520px] 2xl:h-[620px] mt-7.5 2xl:mt-12.5  overflow-hidden">
+                                <div class="p-7.5 2xl:p-12.5">
+                                    <!-- heading  -->
+                                    <h2
+                                        class="text-[26px] 2xl:text-[30px] text-[#e9e9f1] font-bold leading-7 2xl:leading-9">
+                                        SEO/Digital <br> marketing solutions</h2>
+                                    <!-- button  -->
+                                    <div
+                                        class="flex colg:flex-col colg:items-start lg:flex-row  items-center mt-[13px]">
+                                        <div
+                                            class="text-[#D2D2D9] text-[15px] bg-[#111111] border border-[#303033] flex justify-center items-center rounded-[14px] h-[34px] px-3.5 mr-2.5 mb-[5px] shrink-0">
+                                            Social Media</div>
+                                        <div
+                                            class="text-[#D2D2D9] text-[15px] bg-[#111111] border border-[#303033] flex justify-center items-center rounded-[14px] h-[34px] px-3.5  shrink-0">
+                                            Analytics
+                                        </div>
+                                    </div>
+                                    <!-- paragragh  -->
+                                    <p class="text-lg text-[#C7C6D3] font-medium mt-[23px]">Social media content plans,
+                                        media monitoring, email and text messaging and search engine optimization.</p>
+                                </div>
+                                <div class="absolute left-0">
+                                    <img class="w-full" src="img-5/9.webp" alt="">
+                                </div>
+                            </div>
+                            <!-- block-4  -->
+                            <div
+                                class="border border-[#303033] cursor-pointer rounded-[30px] relative h-[520px] 2xl:h-[620px] mt-7.5 2xl:mt-12.5  overflow-hidden">
+                                <div class="p-7.5 2xl:p-12.5">
+                                    <!-- heading  -->
+                                    <h2
+                                        class="text-[26px] 2xl:text-[30px] text-[#e9e9f1] font-bold leading-7 2xl:leading-9">
+                                        Brand<br>identity
+                                    </h2>
+                                    <!-- button  -->
+                                    <div
+                                        class="flex colg:flex-col colg:items-start lg:flex-row  items-center mt-[13px]">
+                                        <div
+                                            class="text-[#D2D2D9] text-[15px] bg-[#111111] border border-[#303033] flex justify-center items-center rounded-[14px] h-[34px] px-3.5 mr-2.5 mb-[5px] shrink-0">
+                                            Logo Design</div>
+                                        <div
+                                            class="text-[#D2D2D9] text-[15px] bg-[#111111] border border-[#303033] flex justify-center items-center rounded-[14px] h-[34px] px-3.5  shrink-0">
+                                            Style Guides
+                                        </div>
+                                    </div>
+                                    <!-- paragragh  -->
+                                    <p class="text-lg text-[#C7C6D3] font-medium mt-[23px]">I help my clients to develop
+                                        a personality and brand voice, design the brand look and logo.</p>
+                                </div>
+                                <div class="absolute left-0">
+                                    <img class="w-full" src="img-5/10.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- <section-5></section-5> -->
+                <section class="max-md:mx-3.5 max-colg:mx-15 xl:pl-7.5 xl:pr-15 2xl:pl-12.5 2xl:pr-20 ">
+                    <div class="py-15 md:py-[75px]">
+                        <!-- heading  -->
+                        <div class="mb-3.5 md:mb-[19px] xl:mb-4 2xl:mb-1">
+                            <div
+                                class="reveal-on-scroll text-[#C7C6D3] bg-[#111111] text-[13px] h-[34px] font-bold inline-flex items-center justify-center border border-[#303033] rounded-full px-3.5 mb-[19px]  self-start">
+                                <span class="mr-2.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px"
+                                        viewBox="0 0 13 13" fill="currentColor">
+                                        <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                                           C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                                            C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z">
+                                        </path>
+                                    </svg>
+                                </span>Resume
+                            </div>
+                            <div class="">
+                                <h1
+                                    class="reveal-on-scroll text-[34px] md:text-[38px] xl:text-[46px] 2xl:text-[54px] bg-gradient-to-tr from-[#E1BAC5] to-[#CEC4EF] bg-clip-text text-transparent font-bold leading-8 md:leading-13 xl:leading-15 2xl:leading-17.5">
+                                    Education and practical <br class="max-xl:hidden"> experience
+                                </h1>
+                            </div>
+                        </div>
+                        <!-- Describtion -->
+                        <p class="text-[20px] 2xl:text-[22px] text-[#C7C6D3]  leading-7">Be what you would
+                            seem to be - or, if you'd like it put more simply - never imagine yourself not to be
+                            otherwise than what it might appear to others that what you were or
+                            <span class="border-b border-[#303033] cursor-pointer relative group">might have been
+                                <span
+                                    class="absolute left-0 bottom-0 w-0 h-[1px] bg-gradient-to-tr from-[#E1BAC5] to-[#CEC4EF]  transition-all duration-500 ease-in-out group-hover:w-full">
+                                </span>
+                            </span> was not otherwise than what you had been would have appeared to them to be
+                            otherwise.
+                        </p>
+                    </div>
+                </section>
+                <!-- <section-6></section-6> -->
+                <section class="max-md:mx-3.5 max-colg:mx-15 xl:pl-7.5 xl:pr-15 2xl:pl-12.5 2xl:pr-20 ">
+                    <div class="py-15 md:py-[75px]">
+                        <!-- heading -->
+                        <h2
+                            class="text-[28px] md:text-[30px] 2xl:text-[38px] text-[#e9e9f1] font-bold mb-[41px] 2xl:mb-[39px]">
+                            My education</h2>
+                        <!-- rows  -->
+                        <!-- row-1  -->
+                        <div
+                            class="border-y border-[#303033] flex max-md:flex-col justify-between items-start pb-[43px] pt-12 md:py-11">
+                            <div class="text-[15px] text-[#C7C6D3] mt-1 flex font-mono shrink-0 max-md:mb-4.5">2015-2016
+                            </div>
+                            <div class="flex flex-col shrink-0">
+                                <h3 class="text-[22px] text-[#E9E9F1] font-bold leading-6 flex shrink-0">
+                                    Drawing Concentration
+                                </h3>
+                                <p class="text-[15px] text-[#C7C6D3] mt-[3px]">Course by <span
+                                        class="text-[#E9E9F1] font-bold cursor-pointer relative group">New York Academy
+                                        of Art
+                                        <span
+                                            class="absolute left-0 bottom-0 w-0 h-[0.5px] bg-gradient-to-tr from-[#E1BAC5] to-[#CEC4EF]  transition-all duration-500 ease-in-out group-hover:w-full">
+                                        </span>
+                                    </span>
+                                </p>
+                            </div>
+                            <p class="text-[#C7C6D3] md:text-lg  md:max-w-[43%] leading-6 max-md:mt-5">
+                                My job was to create adverts, branding, signage and other media products.</p>
+                        </div>
+                        <!-- row-2 -->
+                        <div
+                            class="border-b border-[#303033] flex max-md:flex-col justify-between items-start pb-[43px] pt-12 md:py-11">
+                            <div class="text-[15px] text-[#C7C6D3] mt-1 flex font-mono shrink-0 max-md:mb-4.5">2019-2021
+                            </div>
+                            <div class="flex flex-col shrink-0">
+                                <h3 class="text-[22px] text-[#E9E9F1] font-bold leading-6 flex shrink-0">
+                                    UI/UX Design
+                                    <br class="max-md:hidden"> Specialization
+                                </h3>
+                                <p class="text-[15px] text-[#C7C6D3] mt-[3px]">Course by <span
+                                        class="text-[#E9E9F1] font-bold cursor-pointer relative group">California
+                                        Institute of Arts
+                                        <span
+                                            class="absolute left-0 bottom-0 w-0 h-[0.5px] bg-gradient-to-tr from-[#E1BAC5] to-[#CEC4EF]  transition-all duration-500 ease-in-out group-hover:w-full">
+                                        </span>
+                                    </span>
+                                </p>
+                            </div>
+                            <p class="text-[#C7C6D3] md:text-lg  md:max-w-[43%] leading-6 max-md:mt-5">
+                                Intensive drawing courses that present the fundamental principles of drawing.</p>
+                        </div>
+                        <!-- row-3-->
+                        <div
+                            class="border-b border-[#303033] flex max-md:flex-col justify-between items-start pb-[43px] pt-12 md:py-11">
+                            <div class="text-[15px] text-[#C7C6D3] mt-1 flex font-mono shrink-0 max-md:mb-4.5">2021
+                            </div>
+                            <div class="flex flex-col pr-12.5 shrink-0">
+                                <h3 class="text-[22px] text-[#E9E9F1] font-bold leading-6 flex shrink-0">
+                                    UI/UX Designer
+                                </h3>
+                                <p class="text-[15px] text-[#C7C6D3] mt-[3px]">Course by <span
+                                        class="text-[#E9E9F1] font-bold cursor-pointer relative group">Coursera
+                                        <span
+                                            class="absolute left-0 bottom-0 w-0 h-[0.5px] bg-gradient-to-tr from-[#E1BAC5] to-[#CEC4EF]  transition-all duration-500 ease-in-out group-hover:w-full">
+                                        </span>
+                                    </span>
+                                </p>
+                            </div>
+                            <p class="text-[#C7C6D3] md:text-lg  md:max-w-[43%] leading-6 max-md:mt-5">This cource is
+                                about how to complete the design process from beginning to end.
+                            </p>
+                        </div>
+                        <!-- row-end  -->
+                    </div>
+                </section>
+                <!-- <section-7></section-7> -->
+                <section class="max-md:mx-3.5 max-colg:mx-15 xl:pl-7.5 xl:pr-15 2xl:pl-12.5 2xl:pr-20 ">
+                    <div class="py-15 md:py-[75px]">
+                        <!-- heading -->
+                        <h2
+                            class="text-[28px] md:text-[30px] 2xl:text-[38px] text-[#e9e9f1] font-bold mb-[41px] 2xl:mb-[39px]">
+                            Work experience</h2>
+                        <!-- rows  -->
+                        <!-- row-1  -->
+                        <div
+                            class="border-b border-[#303033] flex max-md:flex-col justify-between items-start pb-[43px] pt-12 md:py-11">
+
+                            <!-- Left: Date -->
+                            <div class="text-[15px] text-[#C7C6D3] mt-1 flex font-mono shrink-0 max-md:mb-4.5">
+                                2018-2019
+                            </div>
+
+                            <!-- Middle: Title & Company -->
+                            <div class="flex flex-col shrink-0">
+                                <h3 class="text-[22px] text-[#E9E9F1] font-bold leading-6 flex shrink-0">
+                                    Illustrator
+                                </h3>
+                                <p class="text-[15px] text-[#C7C6D3] mt-[3px]">
+                                    in the
+                                    <span class="relative group text-[#E9E9F1] font-bold cursor-pointer">
+                                        Creative Mind
+                                        <!-- Hover underline -->
+                                        <span
+                                            class="absolute left-0 bottom-0 h-[1px] w-0 bg-gradient-to-tr from-[#E1BAC5] to-[#CEC4EF] transition-all duration-500 ease-in-out group-hover:w-full"></span>
+                                    </span>
+                                    agency
+                                </p>
+                            </div>
+
+                            <!-- Right: Description -->
+                            <p class="text-[#C7C6D3] md:text-lg md:max-w-[43%] leading-6 max-md:mt-5">
+                                I created original images for a range of digital and printed products.
+                            </p>
+                        </div>
+
+                        <!-- row-2 -->
+                        <div
+                            class="border-b border-[#303033] flex max-md:flex-col justify-between items-start pb-[43px] pt-12 md:py-11">
+                            <div class="text-[15px] text-[#C7C6D3] mt-1 flex font-mono shrink-0 max-md:mb-4.5">2019-2021
+                            </div>
+                            <div class="flex flex-col shrink-0">
+                                <h3 class="text-[22px] text-[#E9E9F1] font-bold leading-6 flex shrink-0">
+                                    Graphic Designer
+                                </h3>
+                                <p class="text-[15px] text-[#C7C6D3] mt-[3px]">in the <span
+                                        class="text-[#E9E9F1] font-bold cursor-pointer relative group">Moon Light
+                                        <span
+                                            class="absolute left-0 bottom-0 w-0 h-[0.5px] bg-gradient-to-tr from-[#E1BAC5] to-[#CEC4EF]  transition-all duration-500 ease-in-out group-hover:w-full">
+                                        </span>
+                                    </span>
+                                    agency
+                                </p>
+                            </div>
+                            <p class="text-[#C7C6D3] md:text-lg  md:max-w-[43%] leading-6 max-md:mt-5">
+                                My job was to create adverts, branding, signage and other media products.</p>
+                        </div>
+                        <!-- row-3-->
+                        <div
+                            class="border-b border-[#303033] flex max-md:flex-col justify-between items-start pb-[43px] pt-12 md:py-11">
+                            <div class="text-[15px] text-[#C7C6D3] mt-1 flex font-mono shrink-0 max-md:mb-4.5">2019-2021
+                            </div>
+                            <div class="flex flex-col pr-6.5 shrink-0">
+                                <h3 class="text-[22px] text-[#E9E9F1] font-bold leading-6 flex shrink-0">
+                                    UI/UX Designer
+                                </h3>
+                                <p class="text-[15px] text-[#C7C6D3] mt-[3px]">in the <span
+                                        class="text-[#E9E9F1] font-bold cursor-pointer relative group">Moon Light
+                                        <span
+                                            class="absolute left-0 bottom-0 w-0 h-[0.5px] bg-gradient-to-tr from-[#E1BAC5] to-[#CEC4EF]  transition-all duration-500 ease-in-out group-hover:w-full">
+                                        </span>
+                                    </span>
+                                    agency
+                                </p>
+                            </div>
+                            <p class="text-[#C7C6D3] md:text-lg  md:max-w-[43%] leading-6 max-md:mt-5">
+                                I am actively involved in creating user interfaces for mobile apps and websites.</p>
+                        </div>
+                        <!-- row-end  -->
+                    </div>
+                </section>
+                <!-- <section-8></section-8> -->
+                <section class="max-md:mx-3.5 max-colg:mx-15 xl:pl-7.5 xl:pr-15 2xl:pl-12.5 2xl:pr-20 ">
+                    <div class="py-15 md:py-[75px]">
+                        <!-- heading -->
+                        <h2
+                            class="text-[28px] md:text-[30px] 2xl:text-[38px] text-[#e9e9f1] font-bold mb-[41px] 2xl:mb-[39px]">
+                            My favourite tools</h2>
+                        <!-- boxs  -->
+                        <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4.5">
+                            <!-- box-1  -->
+                            <div
+                                class="border border-[#303033] p-7.5 flex flex-col  items-center justify-center rounded-[35px]">
+                                <img class="w-20 h-15 md:w-30 md:h-22.5 xl:w-20 xl:h-15" src="img-5/11.svg" alt="">
+                                <h3 class="text-base 2xl:text-lg text-[#e9e9f1] font-bold mt-[15px] flex shrink-0">
+                                    Photoshop</h3>
+                            </div>
+                            <!-- box-2  -->
+                            <div
+                                class="border border-[#303033] p-7.5 flex flex-col  items-center justify-center rounded-[35px]">
+                                <img class="w-20 h-15 md:w-30 md:h-22.5 xl:w-20 xl:h-15" src="img-5/12.svg" alt="">
+                                <h3 class="text-base 2xl:text-lg text-[#e9e9f1] font-bold mt-[15px] flex shrink-0">
+                                    Figma</h3>
+                            </div>
+                            <!-- box-3  -->
+                            <div
+                                class="border border-[#303033] p-7.5 flex flex-col  items-center justify-center rounded-[35px]">
+                                <img class="w-20 h-15 md:w-30 md:h-22.5 xl:w-20 xl:h-15" src="img-5/13.svg" alt="">
+                                <h3 class="text-base 2xl:text-lg text-[#e9e9f1] font-bold mt-[15px] flex shrink-0">
+                                    Illustrator</h3>
+                            </div>
+                            <!-- box-4  -->
+                            <div
+                                class="border border-[#303033] p-7.5 flex flex-col  items-center justify-center rounded-[35px]">
+                                <img class="w-20 h-15 md:w-30 md:h-22.5 xl:w-20 xl:h-15" src="img-5/14.svg" alt="">
+                                <h3 class="text-base 2xl:text-lg text-[#e9e9f1] font-bold mt-[15px] flex shrink-0">
+                                    Sketch</h3>
+                            </div>
+                            <!-- box-5  -->
+                            <div
+                                class="border border-[#303033] p-7.5 flex flex-col  items-center justify-center rounded-[35px]">
+                                <img class="w-20 h-15 md:w-30 md:h-22.5 xl:w-20 xl:h-15" src="img-5/15.svg" alt="">
+                                <h3 class="text-base 2xl:text-lg text-[#e9e9f1] font-bold mt-[15px] flex shrink-0">
+                                    Blender</h3>
+                            </div>
+                            <!-- box-6  -->
+                            <div
+                                class="border border-[#303033] p-7.5 flex flex-col  items-center justify-center rounded-[35px]">
+                                <img class="w-20 h-15 md:w-30 md:h-22.5 xl:w-20 xl:h-15" src="img-5/16.svg" alt="">
+                                <h3 class="text-base 2xl:text-lg text-[#e9e9f1] font-bold mt-[15px] flex shrink-0">
+                                    HTML <span class="font-mono">5</span></h3>
+                            </div>
+                            <!-- box-7  -->
+                            <div
+                                class="border border-[#303033] p-7.5 flex flex-col  items-center justify-center rounded-[35px]">
+                                <img class="w-20 h-15 md:w-30 md:h-22.5 xl:w-20 xl:h-15" src="img-5/17.svg" alt="">
+                                <h3 class="text-base 2xl:text-lg text-[#e9e9f1] font-bold mt-[15px] flex shrink-0">
+                                    CSS <span class="font-mono">3</span></h3>
+                            </div>
+                            <!-- box-8  -->
+                            <div
+                                class="border border-[#303033] p-7.5 flex flex-col  items-center justify-center rounded-[35px]">
+                                <img class="w-20 h-15 md:w-30 md:h-22.5 xl:w-20 xl:h-15" src="img-5/18.svg" alt="">
+                                <h3 class="text-base 2xl:text-lg text-[#e9e9f1] font-bold mt-[15px] flex shrink-0">
+                                    Notion</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- <section-9></section-9> -->
+                <section class="max-md:mx-3.5 max-colg:mx-15 xl:pl-7.5 xl:pr-15 2xl:pl-12.5 2xl:pr-20 ">
+                    <div class="py-15 md:py-[75px]">
+                        <!-- heading  -->
+                        <div class="mb-10 md:mb-12.5 xl:mb-4 2xl:mb-1">
+                            <div
+                                class="reveal-on-scroll text-[#C7C6D3] bg-[#111111] text-[13px] h-[34px] font-bold inline-flex items-center justify-center border border-[#303033] rounded-full px-3.5 mb-[19px]  self-start">
+                                <span class="mr-2.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px"
+                                        viewBox="0 0 13 13" fill="currentColor">
+                                        <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                                           C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                                            C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z">
+                                        </path>
+                                    </svg>
+                                </span>Testimonials
+                            </div>
+                            <div class="">
+                                <h1
+                                    class="reveal-on-scroll text-[34px] md:text-[38px] xl:text-[46px] 2xl:text-[54px] bg-gradient-to-tr from-[#E1BAC5] to-[#CEC4EF] bg-clip-text text-transparent font-bold leading-8 md:leading-13 xl:leading-15 2xl:leading-17.5">
+                                    Clients say about me
+                                </h1>
+                            </div>
+                        </div>
+                        <!-- slider  -->
+                        <div class="border border-[#303033] rounded-[27px] p-7.5 2xl:p-12.5">
+                            <!-- header  -->
+                            <div class="flex md:items-center ">
+                                <img class="size-15 md:size-[100px] rounded-[25px] mr-5" src="img-5/20.webp" alt="">
+                                <div class="leading-none">
+                                    <h2 class="text-[24px] md:text-[26px] 2xl:text-[30px] text-[#e9e9f1] font-bold">Alex
+                                        Tomato</h2>
+                                    <p class="text-[15px] text-[#e9e9f1] mt-1">Brand Manager in <span
+                                            class="font-bold">Instant Design</span>
+                                    </p>
+                                    <!-- stars  -->
+                                    <div class="flex items-center mt-2.5 gap-2">
+                                        <!-- star-1  -->
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px"
+                                                viewBox="0 0 24 24">
+                                                <path fill="#D4C2E3"
+                                                    d="m8.243 7.34l-6.38.925l-.113.023a1 1 0 0 0-.44 1.684l4.622 4.499l-1.09 6.355l-.013.11a1 1 0 0 0 1.464.944l5.706-3l5.693 3l.1.046a1 1 0 0 0 1.352-1.1l-1.091-6.355l4.624-4.5l.078-.085a1 1 0 0 0-.633-1.62l-6.38-.926l-2.852-5.78a1 1 0 0 0-1.794 0z"
+                                                    stroke-width="1" stroke="#D4C2E3" />
+                                            </svg>
+                                        </span>
+                                        <!-- star-2  -->
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px"
+                                                viewBox="0 0 24 24">
+                                                <path fill="#D4C2E3"
+                                                    d="m8.243 7.34l-6.38.925l-.113.023a1 1 0 0 0-.44 1.684l4.622 4.499l-1.09 6.355l-.013.11a1 1 0 0 0 1.464.944l5.706-3l5.693 3l.1.046a1 1 0 0 0 1.352-1.1l-1.091-6.355l4.624-4.5l.078-.085a1 1 0 0 0-.633-1.62l-6.38-.926l-2.852-5.78a1 1 0 0 0-1.794 0z"
+                                                    stroke-width="1" stroke="#D4C2E3" />
+                                            </svg>
+                                        </span>
+                                        <!-- star-3  -->
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px"
+                                                viewBox="0 0 24 24">
+                                                <path fill="#D4C2E3"
+                                                    d="m8.243 7.34l-6.38.925l-.113.023a1 1 0 0 0-.44 1.684l4.622 4.499l-1.09 6.355l-.013.11a1 1 0 0 0 1.464.944l5.706-3l5.693 3l.1.046a1 1 0 0 0 1.352-1.1l-1.091-6.355l4.624-4.5l.078-.085a1 1 0 0 0-.633-1.62l-6.38-.926l-2.852-5.78a1 1 0 0 0-1.794 0z"
+                                                    stroke-width="1" stroke="#D4C2E3" />
+                                            </svg>
+                                        </span>
+                                        <!-- star-4  -->
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px"
+                                                viewBox="0 0 24 24">
+                                                <path fill="#D4C2E3"
+                                                    d="m8.243 7.34l-6.38.925l-.113.023a1 1 0 0 0-.44 1.684l4.622 4.499l-1.09 6.355l-.013.11a1 1 0 0 0 1.464.944l5.706-3l5.693 3l.1.046a1 1 0 0 0 1.352-1.1l-1.091-6.355l4.624-4.5l.078-.085a1 1 0 0 0-.633-1.62l-6.38-.926l-2.852-5.78a1 1 0 0 0-1.794 0z"
+                                                    stroke-width="1" stroke="#D4C2E3" />
+                                            </svg>
+                                        </span>
+                                        <!-- star-5  -->
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px"
+                                                viewBox="0 0 24 24">
+                                                <path fill="#D4C2E3"
+                                                    d="m8.243 7.34l-6.38.925l-.113.023a1 1 0 0 0-.44 1.684l4.622 4.499l-1.09 6.355l-.013.11a1 1 0 0 0 1.464.944l5.706-3l5.693 3l.1.046a1 1 0 0 0 1.352-1.1l-1.091-6.355l4.624-4.5l.078-.085a1 1 0 0 0-.633-1.62l-6.38-.926l-2.852-5.78a1 1 0 0 0-1.794 0z"
+                                                    stroke-width="1" stroke="#D4C2E3" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-[20px] 2xl:text-[22px] text-[#C7C6D3] mt-5 2xl:mt-10 leading-7">Lorem ipsum
+                                dolor sit amet,
+                                consectetuer adipiscing elit, sed diam nonummy nibh
+                                euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                                minim veniam, quis nostrud. Dolore magna aliquam.</p>
+                            <div class="text-[#e9e9f1] font-bold flex items-center mt-5 2xl:mt-8.5">Project Page
+                                <span>
+                                    <svg class="text-[#e9e9f1] ml-1" xmlns="http://www.w3.org/2000/svg" width="20px"
+                                        height="20px" viewBox="0 0 24 24">
+                                        <g fill="none">
+                                            <path
+                                                d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                                            <path fill="currentColor"
+                                                d="m14.707 5.636l5.657 5.657a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 0 1-1.414-1.414l3.95-3.95H4a1 1 0 1 1 0-2h13.243l-3.95-3.95a1 1 0 1 1 1.414-1.414" />
+                                        </g>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex items-center mt-5">
+                            <div
+                                class="border border-[#4B4B51] size-12.5 flex items-center justify-center rounded-[21px] mr-3">
+                                <svg class="rotate-180 cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="18px"
+                                    height="18px" viewBox="0 0 24 24">
+                                    <path fill="#e9e9f1"
+                                        d="m13.172 12l-4.95-4.95l1.414-1.413L16 12l-6.364 6.364l-1.414-1.415z" />
+                                </svg>
+                            </div>
+                            <div
+                                class="border border-[#4B4B51] size-12.5 flex items-center justify-center rounded-[21px] ">
+                                <svg class="cursor-pointer" xmlns="http://www.w3.org/2000/svg" width="18px"
+                                    height="18px" viewBox="0 0 24 24">
+                                    <path fill="#e9e9f1"
+                                        d="m13.172 12l-4.95-4.95l1.414-1.413L16 12l-6.364 6.364l-1.414-1.415z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- <section-10></section-10> -->
+                <section class="max-md:mx-3.5 max-colg:mx-15 xl:pl-7.5 xl:pr-15 2xl:pl-12.5 2xl:pr-20 ">
+                    <div class="py-15 md:py-[75px]">
+                        <!-- heading  -->
+                        <div class="mb-10 md:mb-11.5 ">
+                            <div
+                                class="reveal-on-scroll text-[#C7C6D3] bg-[#111111] text-[13px] h-[34px] font-bold inline-flex items-center justify-center border border-[#303033] rounded-full px-3.5 mb-[19px]  self-start">
+                                <span class="mr-2.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px"
+                                        viewBox="0 0 13 13" fill="currentColor">
+                                        <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                                           C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                                            C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z">
+                                        </path>
+                                    </svg>
+                                </span>Contact
+                            </div>
+                            <div class="">
+                                <h1
+                                    class="reveal-on-scroll text-[34px] md:text-[38px] xl:text-[46px] 2xl:text-[54px] bg-gradient-to-tr from-[#E1BAC5] to-[#CEC4EF] bg-clip-text text-transparent font-bold leading-8 md:leading-13 xl:leading-15 2xl:leading-17.5">
+                                    Let's make something <br class="max-xl:hidden"> awesome together!
+                                </h1>
+                            </div>
+                        </div>
+                        <!-- form  -->
+                        <form>
+                            <div class="flex max-md:flex-col items-center w-full gap-x-12.5">
+                                <input
+                                    class="text-[20px] text-[#C7C6D3] font-bold border-b-2 border-[#303033] focus:border-[#E4B8BF] w-full indent-4 py-[14px] mb-7.5 outline-none input-tabular"
+                                    type="text" name="" required placeholder="Your Name*" id="">
+                                <input
+                                    class="text-[20px] text-[#C7C6D3] font-bold border-b-2 border-[#303033] focus:border-[#E4B8BF] w-full indent-4 py-[14px] mb-7.5 outline-none input-tabular"
+                                    type="text" name="" placeholder="Company Name" id="">
+                            </div>
+                            <div class="flex max-md:flex-col items-center w-full gap-x-12.5">
+                                <input
+                                    class="text-[20px] text-[#C7C6D3] font-bold border-b-2 border-[#303033] focus:border-[#E4B8BF] w-full indent-4 py-[14px] mb-7.5 outline-none input-tabular"
+                                    type="email" name="" required placeholder="Email Adress*" id="">
+                                <input
+                                    class="text-[20px] text-[#C7C6D3] font-bold border-b-2 border-[#303033] focus:border-[#E4B8BF] w-full indent-4 py-[14px] mb-7.5 outline-none input-tabular"
+                                    type="number" name="" placeholder="Phone Number*" id="">
+                            </div>
+                            <!-- text-area  -->
+                            <textarea
+                                class="text-[20px] text-[#C7C6D3] font-bold border-b-2 border-[#303033] focus:border-[#E4B8BF] w-full h-40 indent-4 py-[14px] mb-7.5 outline-none"
+                                name="" placeholder="A Few Words*" id=""></textarea>
+                        </form>
+                    </div>
+                </section>
+            </section>
+        </section>
+
+        <!-- </div> -->
+        <script src="script5.js">
+        </script>
 </body>
 
 </html>
