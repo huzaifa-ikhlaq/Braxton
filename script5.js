@@ -2,27 +2,33 @@
 
 let firstPage = document.querySelector('#first-page')
 let mainPage = document.querySelector('#main-page')
-let bgSvg1 = document.querySelector('#bg-svg')
+let bgSvg = document.querySelector('#bg-svg')
+let heroText = document.querySelector('#heroText')
 
 window.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         firstPage.classList.add('hidden')
-        // main-page 
+
         mainPage.classList.remove('hidden')
+
         setTimeout(() => {
-            // bg-svg
-            bgSvg1.classList.remove('opacity-0')
-            bgSvg1.classList.add('opacity-100')
-        }, 800)
+            heroText.classList.remove('translate-y-15', 'opacity-0')
+            setTimeout(() => {
+                // bg-svg fade in
+                bgSvg.classList.remove('opacity-0')
+                bgSvg.classList.add('opacity-100')
+            }, 100)
+        }, 100)
     }, 2000)
 })
+// 4 3 2
 
 // Toggle theme (dark / light)
 let containerOfSunMoon = document.querySelector('#containerOfSunMoon');
 let sun = document.querySelector('#sun');
 let moon = document.querySelector('#moon');
 
-// Initialize theme from localStorage
+
 let isDark = localStorage.getItem('theme') === 'dark';
 
 function applyTheme() {
@@ -46,14 +52,19 @@ containerOfSunMoon.addEventListener('click', () => {
     applyTheme();
 });
 
-// Nav item highlighting
+// nav-iteams 
 const navItems = document.querySelectorAll('[id^="nav-item-"]');
 
 navItems.forEach(item => {
     item.addEventListener('click', () => {
-        // Remove border and text colors from all nav items
+
         navItems.forEach(nav => {
-            nav.classList.remove('border-[#595959]', 'dark:border-[#a8b0c1]');
+            nav.classList.remove(
+                'border-[#595959]',
+                'dark:border-[#a8b0c1]',
+                'bg-black',
+                'dark:bg-white'
+            );
             nav.classList.add('border-transparent');
 
             const links = nav.querySelectorAll('a');
@@ -61,19 +72,77 @@ navItems.forEach(item => {
                 link.classList.remove('text-[#e9e9f1]', 'dark:text-[#22232C]');
                 link.classList.add('text-[#8B8A91]');
             });
+
+            const svg = nav.querySelector('svg');
+            if (svg) {
+                svg.classList.remove(
+                    'text-[#e9e9f1]',
+                    'dark:text-[#22232C]',
+                    'text-white',
+                    'dark:text-black'
+                );
+                svg.classList.add('text-[#8B8A91]');
+            }
         });
 
-        // Apply active border and text color to clicked item
-        item.classList.remove('border-transparent');
-        item.classList.add('border-[#595959]', 'dark:border-[#a8b0c1]');
+        if (window.innerWidth >= 992) {
+            item.classList.remove('border-transparent');
+            item.classList.add('border-[#595959]', 'dark:border-[#a8b0c1]');
+        }
 
         const currentLinks = item.querySelectorAll('a');
         currentLinks.forEach(link => {
             link.classList.remove('text-[#8B8A91]');
             link.classList.add('text-[#e9e9f1]', 'dark:text-[#22232C]');
         });
+
+        const activeSvg = item.querySelector('svg');
+        if (activeSvg) {
+            activeSvg.classList.remove('text-[#8B8A91]');
+            activeSvg.classList.add('text-[#e9e9f1]', 'dark:text-[#22232C]');
+        }
+
+        if (
+            item.classList.contains('left-nav-item') &&
+            window.innerWidth < 992
+        ) {
+            item.classList.add('bg-black', 'dark:bg-white');
+
+            if (activeSvg) {
+                activeSvg.classList.add('text-white', 'dark:text-black');
+            }
+        }
     });
 });
+
+// reached to section by nav item functionality
+function slowScrollTo(id) {
+    const target = document.getElementById(id);
+    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+    const startPosition = window.pageYOffset;
+    const distance = targetPosition - startPosition;
+    let startTime = null;
+
+    function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const duration = 100;
+
+        const run = easeInOutQuad(timeElapsed, startPosition, distance, duration);
+        window.scrollTo(0, run);
+
+        if (timeElapsed < duration) requestAnimationFrame(animation);
+    }
+
+    function easeInOutQuad(t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return c / 2 * t * t + b;
+        t--;
+        return -c / 2 * (t * (t - 2) - 1) + b;
+    }
+
+    requestAnimationFrame(animation);
+}
 
 
 
@@ -105,10 +174,10 @@ function handleScrollReveal() {
     revealElements.forEach((el) => {
         const rect = el.getBoundingClientRect();
 
-        if (rect.top < windowHeight - 50) {
+        if (rect.top < windowHeight - 45) {
             el.classList.add('visible');
         } else {
-            el.classList.remove('visible'); // Important: this lets it animate again
+            el.classList.remove('visible');
         }
     });
 }
@@ -116,8 +185,71 @@ function handleScrollReveal() {
 window.addEventListener('scroll', handleScrollReveal);
 window.addEventListener('load', handleScrollReveal);
 
+
+
 // slider 
 
+const slides = document.getElementById("slides");
+const nextBtn = document.getElementById("nextBtn");
+const prevBtn = document.getElementById("prevBtn");
+
+const totalSlides = slides.children.length; // 4
+const realSlides = totalSlides - 2; // 2 real slides
+let currentIndex = 1;
+let isTransitioning = false;
+
+// Set initial position
+slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+function updateSlidePosition() {
+    slides.style.transition = 'transform 0.5s ease-in-out';
+    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+function jumpTo(index) {
+    slides.style.transition = 'none';
+    slides.style.transform = `translateX(-${index * 100}%)`;
+    currentIndex = index;
+}
+
+function goNext() {
+    if (isTransitioning) return;
+    isTransitioning = true;
+    currentIndex++;
+    updateSlidePosition();
+
+    if (currentIndex === totalSlides - 1) {
+        setTimeout(() => {
+            jumpTo(1);
+            isTransitioning = false;
+        }, 500);
+    } else {
+        setTimeout(() => isTransitioning = false, 500);
+    }
+}
+
+function goPrev() {
+    if (isTransitioning) return;
+    isTransitioning = true;
+    currentIndex--;
+    updateSlidePosition();
+
+    if (currentIndex === 0) {
+        setTimeout(() => {
+            jumpTo(realSlides);
+            isTransitioning = false;
+        }, 500);
+    } else {
+        setTimeout(() => isTransitioning = false, 500);
+    }
+}
+
+// Button events
+nextBtn.addEventListener("click", goNext);
+prevBtn.addEventListener("click", goPrev);
+
+// ✅ Auto-play every 3 seconds
+setInterval(goNext, 3000);
 
 // signUp-form 
 

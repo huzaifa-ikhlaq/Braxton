@@ -2,196 +2,26 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testimonial Slider</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Profile Hover</title>
+    <link rel="stylesheet" href="src/output.css">
     <style>
-        .slider-container {
-            transition: transform 0.5s ease-in-out;
+        /* Optional 3D styles, not directly related to the sliding effect */
+        .perspective {
+            perspective: 1000px;
         }
     </style>
 </head>
 
-<body class="bg-black min-h-screen flex items-center justify-center p-4">
-    <div class="max-w-4xl w-full">
-        <!-- Slider Container -->
-        <div class="overflow-hidden">
-            <div id="sliderContainer" class="flex slider-container" style="transform: translateX(0%);">
-                <!-- Slide 1 -->
-                <div class="min-w-full flex-shrink-0 px-2">
-                    <div class="border border-[#303033] rounded-[27px] p-7.5 2xl:p-12.5">
-                        <div class="flex md:items-center">
-                            <div
-                                class="size-15 md:size-[100px] rounded-[25px] mr-5 bg-gradient-to-r from-purple-500 to-pink-500">
-                            </div>
-                            <div class="leading-none">
-                                <h2 class="text-[24px] md:text-[26px] 2xl:text-[30px] text-[#e9e9f1] font-bold">
-                                    Alex Tomato
-                                </h2>
-                                <p class="text-[15px] text-[#e9e9f1] mt-1">
-                                    Brand Manager in <span class="font-bold">Instant Design</span>
-                                </p>
-                                <!-- Stars -->
-                                <div class="flex items-center mt-2.5 gap-2">
-                                    <span class="text-[#D4C2E3]">★★★★★</span>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="text-[20px] 2xl:text-[22px] text-[#C7C6D3] mt-5 2xl:mt-10 leading-7">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing 
-                        </p>
-                        <div class="text-[#e9e9f1] font-bold flex items-center mt-5 2xl:mt-8.5">
-                            Project Page
-                            <span class="ml-1">→</span>
-                        </div>
-                    </div>
-                </div>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="relative w-48 h-48 rounded-full border-4 border-blue-500 flex items-center justify-center overflow-hidden group perspective">
+        <img  src="img-5/14.svg" alt="Front Image"
+            class="absolute size-30 flex items-center justify-center object-cover transition-transform duration-400 ease-in-out group-hover:-translate-y-full" />
 
-                <!-- Slide 2 -->
-                <div class="min-w-full flex-shrink-0 px-2">
-                    <div class="border border-[#303033] rounded-[27px] p-7.5 2xl:p-12.5">
-                        <div class="flex md:items-center">
-                            <div
-                                class="size-15 md:size-[100px] rounded-[25px] mr-5 bg-gradient-to-r from-blue-500 to-green-500">
-                            </div>
-                            <div class="leading-none">
-                                <h2 class="text-[24px] md:text-[26px] 2xl:text-[30px] text-[#e9e9f1] font-bold">
-                                    Sarah Johnson
-                                </h2>
-                                <p class="text-[15px] text-[#e9e9f1] mt-1">
-                                    UI/UX Designer in <span class="font-bold">Creative Studio</span>
-                                </p>
-                                <!-- Stars -->
-                                <div class="flex items-center mt-2.5 gap-2">
-                                    <span class="text-[#D4C2E3]">★★★★★</span>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="text-[20px] 2xl:text-[22px] text-[#C7C6D3] mt-5 2xl:mt-10 leading-7">
-                            Excepteur sint occaecat cupidatat non proident, 
-                        </p>
-                        <div class="text-[#e9e9f1] font-bold flex items-center mt-5 2xl:mt-8.5">
-                            Project Page
-                            <span class="ml-1">→</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 3 -->
-                <div class="min-w-full flex-shrink-0 px-2">
-                    <div class="border border-[#303033] rounded-[27px] p-7.5 2xl:p-12.5">
-                        <div class="flex md:items-center">
-                            <div
-                                class="size-15 md:size-[100px] rounded-[25px] mr-5 bg-gradient-to-r from-orange-500 to-red-500">
-                            </div>
-                            <div class="leading-none">
-                                <h2 class="text-[24px] md:text-[26px] 2xl:text-[30px] text-[#e9e9f1] font-bold">
-                                    Mike Chen
-                                </h2>
-                                <p class="text-[15px] text-[#e9e9f1] mt-1">
-                                    Frontend Developer in <span class="font-bold">Tech Solutions</span>
-                                </p>
-                                <!-- Stars -->
-                                <div class="flex items-center mt-2.5 gap-2">
-                                    <span class="text-[#D4C2E3]">★★★★★</span>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="text-[20px] 2xl:text-[22px] text-[#C7C6D3] mt-5 2xl:mt-10 leading-7">
-                            Duis aute irure dolor in reprehenderit in voluptate velit 
-                        <div class="text-[#e9e9f1] font-bold flex items-center mt-5 2xl:mt-8.5">
-                            Project Page
-                            <span class="ml-1">→</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Navigation Buttons -->
-        <div class="flex items-center mt-5">
-            <!-- Left Button -->
-            <div id="leftBtn"
-                class="border border-[#4B4B51] size-12.5 flex items-center justify-center rounded-[21px] mr-3 cursor-pointer hover:bg-[#4B4B51] transition-colors">
-                <svg class="rotate-180" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px"
-                    viewBox="0 0 24 24">
-                    <path fill="#e9e9f1" d="m13.172 12l-4.95-4.95l1.414-1.413L16 12l-6.364 6.364l-1.414-1.415z" />
-                </svg>
-            </div>
-            <!-- Right Button -->
-            <div id="rightBtn"
-                class="border border-[#4B4B51] size-12.5 flex items-center justify-center rounded-[21px] cursor-pointer hover:bg-[#4B4B51] transition-colors">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24">
-                    <path fill="#e9e9f1" d="m13.172 12l-4.95-4.95l1.414-1.413L16 12l-6.364 6.364l-1.414-1.415z" />
-                </svg>
-            </div>
-        </div>
-
-        <!-- Slide Indicators -->
-        <div class="flex items-center justify-center mt-4 gap-2">
-            <div id="indicator0" class="w-2 h-2 rounded-full bg-[#e9e9f1] cursor-pointer"></div>
-            <div id="indicator1" class="w-2 h-2 rounded-full bg-[#4B4B51] cursor-pointer"></div>
-            <div id="indicator2" class="w-2 h-2 rounded-full bg-[#4B4B51] cursor-pointer"></div>
-        </div>
+        <img  src="img-5/14.svg" alt="Back Image"
+            class="absolute  top-full size-30 flex items-center justify-center object-cover transition-transform duration-400 ease-in-out group-hover:-translate-y-full" />
     </div>
-
-    <script>
-        let currentSlide = 0;
-        const totalSlides = 3;
-        const sliderContainer = document.getElementById('sliderContainer');
-        const leftBtn = document.getElementById('leftBtn');
-        const rightBtn = document.getElementById('rightBtn');
-
-        function updateSlider() {
-            const translateX = -currentSlide * 100;
-            sliderContainer.style.transform = `translateX(${translateX}%)`;
-
-            // Update indicators
-            for (let i = 0; i < totalSlides; i++) {
-                const indicator = document.getElementById(`indicator${i}`);
-                if (i === currentSlide) {
-                    indicator.classList.add('bg-[#e9e9f1]');
-                    indicator.classList.remove('bg-[#4B4B51]');
-                } else {
-                    indicator.classList.add('bg-[#4B4B51]');
-                    indicator.classList.remove('bg-[#e9e9f1]');
-                }
-            }
-        }
-
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % totalSlides;
-            updateSlider();
-        }
-
-        function prevSlide() {
-            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-            updateSlider();
-        }
-
-        // Event listeners
-        rightBtn.addEventListener('click', nextSlide);
-        leftBtn.addEventListener('click', prevSlide);
-
-        // Indicator click events
-        for (let i = 0; i < totalSlides; i++) {
-            document.getElementById(`indicator${i}`).addEventListener('click', () => {
-                currentSlide = i;
-                updateSlider();
-            });
-        }
-
-        // Auto-slide (optional - remove if not needed)
-        setInterval(nextSlide, 5000); // Auto-advance every 5 seconds
-
-        // Keyboard navigation
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'ArrowLeft') prevSlide();
-            if (e.key === 'ArrowRight') nextSlide();
-        });
-    </script>
 </body>
 
 </html>

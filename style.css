@@ -19,6 +19,10 @@
     /* 1400px */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Syne, sans-serif
 }
@@ -72,7 +76,7 @@ body {
 
 /* Target SVG only on hover */
 .icon-container:hover .icon-svg {
-    animation: bounce-twice 0.8s linear;
+    animation: bounce-twice 300ms linear;
 }
 
 /* Bounce Keyframes */
@@ -83,10 +87,12 @@ body {
 
     33.33% {
         transform: translateY(-16px);
+        opacity: 0;
     }
 
     63.33% {
         transform: translateY(32px);
+        opacity: 1;
     }
 
     100% {
@@ -108,9 +114,9 @@ body {
 
 /* Custom Scrollbar for entire page */
 ::-webkit-scrollbar {
-    width: 4px;
+    width: 5px;
     /* Vertical scrollbar */
-    height: 4px;
+    height: 5px;
     /* Horizontal scrollbar */
 }
 
@@ -122,6 +128,15 @@ body {
     background: linear-gradient(135deg, #E4B8BF 0%, #CEC4EF 100%);
     border-radius: 10px;
 }
+
+html.dark ::-webkit-scrollbar-track {
+    background-color: #bdc1c8;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #aa70e0 0%, #7059e2 100%);
+}
+
 
 /* remove up and down no. sippner  */
 input[type=number]::-webkit-inner-spin-button,
