@@ -17,9 +17,9 @@ window.addEventListener('DOMContentLoaded', () => {
                 // bg-svg fade in
                 bgSvg.classList.remove('opacity-0')
                 bgSvg.classList.add('opacity-100')
-            }, 100)
-        }, 100)
-    }, 100)
+            }, 400)
+        }, 300)
+    }, 2000)
 })
 // 4 3 2
 

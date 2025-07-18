@@ -919,11 +919,17 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
+  .text-\[\#000000\] {
+    color: #000000;
+  }
   .text-\[\#2D2E33\] {
     color: #2D2E33;
   }
   .text-\[\#8B8A91\] {
     color: #8B8A91;
+  }
+  .text-\[\#0101ff\] {
+    color: #0101ff;
   }
   .text-\[\#58585E\] {
     color: #58585E;
