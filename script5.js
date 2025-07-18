@@ -106,7 +106,7 @@ navItems.forEach(item => {
             item.classList.contains('left-nav-item') &&
             window.innerWidth < 992
         ) {
-            item.classList.add('bg-black', 'dark:bg-white');
+            item.classList.add('', 'bg-black');
 
             if (activeSvg) {
                 activeSvg.classList.add('text-white', 'dark:text-black');
