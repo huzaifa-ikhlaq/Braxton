@@ -103,13 +103,43 @@ body {
 .reveal-on-scroll {
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
+    transition: opacity 0.8s ease, transform 1.2s ease;
 }
 
 .reveal-on-scroll.visible {
     opacity: 1;
     transform: translateY(0);
 }
+
+.reveal-on-scroll.delay1 {
+    transition-delay: 0.2s;
+    transition-duration: 1s;
+}
+.reveal-on-scroll.delay2 {
+    transition-delay: 0.3s;
+    transition-duration: 1s;
+}
+.reveal-on-scroll.delay3 {
+    transition-delay: 0.4s;
+    transition-duration: 1s;
+}
+.reveal-on-scroll.delay4 {
+    transition-delay: 0.5s;
+    transition-duration: 1s;
+}
+.reveal-on-scroll.delay5 {
+    transition-delay: 0.6s;
+    transition-duration: 1s;
+}
+.reveal-on-scroll.delay6 {
+    transition-delay: 0.7s;
+    transition-duration: 1s;
+}
+.reveal-on-scroll.delay7 {
+    transition-delay: 0.8s;
+    transition-duration: 1s;
+}
+
 
 
 /* Custom Scrollbar for entire page */

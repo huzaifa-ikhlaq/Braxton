@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 bgSvg.classList.add('opacity-100')
             }, 100)
         }, 100)
-    }, 2000)
+    }, 100)
 })
 // 4 3 2
 
@@ -144,6 +144,91 @@ function slowScrollTo(id) {
     requestAnimationFrame(animation);
 }
 
+// nav active according to section 
+const observedSections = ["section1", "section2", "section3", "section5", "section10"];
+const sectionToNavMap = {
+    section1: "nav-item-1",
+    section2: "nav-item-2",
+    section3: "nav-item-3",
+    section5: "nav-item-4",
+    section10: "nav-item-5"
+};
+
+const observerOptions = {
+    root: null,
+    threshold: 0.0,
+    rootMargin: '0px 0px -20% 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const sectionId = entry.target.id;
+            const navId = sectionToNavMap[sectionId];
+            const currentNav = document.getElementById(navId);
+
+            // Remove active styles from all
+            navItems.forEach(nav => {
+                nav.classList.remove(
+                    'border-[#595959]',
+                    'dark:border-[#a8b0c1]',
+                    'bg-black',
+                    'dark:bg-white'
+                );
+                nav.classList.add('border-transparent');
+
+                const links = nav.querySelectorAll('a');
+                links.forEach(link => {
+                    link.classList.remove('text-[#e9e9f1]', 'dark:text-[#22232C]');
+                    link.classList.add('text-[#8B8A91]');
+                });
+
+                const svg = nav.querySelector('svg');
+                if (svg) {
+                    svg.classList.remove(
+                        'text-[#e9e9f1]',
+                        'dark:text-[#22232C]',
+                        'text-white',
+                        'dark:text-black'
+                    );
+                    svg.classList.add('text-[#8B8A91]');
+                }
+            });
+
+            // Add active styles to current
+            if (window.innerWidth >= 992) {
+                currentNav.classList.remove('border-transparent');
+                currentNav.classList.add('border-[#595959]', 'dark:border-[#a8b0c1]');
+            }
+
+            const currentLinks = currentNav.querySelectorAll('a');
+            currentLinks.forEach(link => {
+                link.classList.remove('text-[#8B8A91]');
+                link.classList.add('text-[#e9e9f1]', 'dark:text-[#22232C]');
+            });
+
+            const activeSvg = currentNav.querySelector('svg');
+            if (activeSvg) {
+                activeSvg.classList.remove('text-[#8B8A91]');
+                activeSvg.classList.add('text-[#e9e9f1]', 'dark:text-[#22232C]');
+            }
+
+            if (currentNav.classList.contains('left-nav-item') && window.innerWidth < 992) {
+                currentNav.classList.add('bg-black', 'dark:bg-white');
+
+                if (activeSvg) {
+                    activeSvg.classList.add('text-white', 'dark:text-black');
+                }
+            }
+        }
+    });
+}, observerOptions);
+
+// Start observing
+observedSections.forEach(id => {
+    const section = document.getElementById(id);
+    if (section) observer.observe(section);
+});
 
 
 // rollar 
@@ -164,17 +249,16 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
-// scroll animation 
+/// scroll animation 1
+const revealElements1 = document.querySelectorAll('.reveal-on-scroll');
 
-const revealElements = document.querySelectorAll('.reveal-on-scroll');
-
-function handleScrollReveal() {
+function handleScrollReveal1() {
     const windowHeight = window.innerHeight;
 
-    revealElements.forEach((el) => {
+    revealElements1.forEach((el) => {
         const rect = el.getBoundingClientRect();
 
-        if (rect.top < windowHeight - 45) {
+        if (rect.top < windowHeight - 40) {
             el.classList.add('visible');
         } else {
             el.classList.remove('visible');
@@ -182,10 +266,8 @@ function handleScrollReveal() {
     });
 }
 
-window.addEventListener('scroll', handleScrollReveal);
-window.addEventListener('load', handleScrollReveal);
-
-
+window.addEventListener('scroll', handleScrollReveal1);
+window.addEventListener('load', handleScrollReveal1);
 
 // slider 
 
