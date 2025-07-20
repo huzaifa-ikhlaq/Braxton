@@ -1207,6 +1207,11 @@
       flex-direction: column;
     }
   }
+  .max-colg\:gap-x-1 {
+    @media (width < 62rem) {
+      column-gap: calc(var(--spacing) * 1);
+    }
+  }
   .max-colg\:border {
     @media (width < 62rem) {
       border-style: var(--tw-border-style);
@@ -1284,6 +1289,11 @@
   .max-md\:size-9 {
     @media (width < 48rem) {
       width: calc(var(--spacing) * 9);
+      height: calc(var(--spacing) * 9);
+    }
+  }
+  .max-md\:h-9 {
+    @media (width < 48rem) {
       height: calc(var(--spacing) * 9);
     }
   }
