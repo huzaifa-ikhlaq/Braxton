@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 bgSvg.classList.add('opacity-100')
             }, 400)
         }, 300)
-    }, 100)
+    }, 2000)
 })
 // 4 3 2
 
@@ -241,9 +241,9 @@ const circle = document.querySelector('.circle-rotate');
 window.addEventListener('scroll', () => {
     const currentScroll = window.scrollY;
     if (currentScroll > lastScroll) {
-        rotation += 5;
+        rotation += 3;
     } else {
-        rotation -= 5;
+        rotation -= 3;
     }
     circle.style.transform = `rotate(${rotation}deg)`;
     lastScroll = currentScroll;
