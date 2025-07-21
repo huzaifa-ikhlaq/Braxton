@@ -259,22 +259,38 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
-/// scroll animation 1
+/// scroll animation 
 const revealElements1 = document.querySelectorAll('.reveal-on-scroll');
 
+let lastScrollY = window.scrollY;
+
 function handleScrollReveal1() {
+    const currentScrollY = window.scrollY;
+    const scrollingDown = currentScrollY > lastScrollY;
     const windowHeight = window.innerHeight;
+
+    // Different trigger offsets for scroll down and scroll up
+    const downOffset = 90;
+    const upOffset = 70;
 
     revealElements1.forEach((el) => {
         const rect = el.getBoundingClientRect();
+        const triggerPoint = scrollingDown
+            ? windowHeight - downOffset
+            : windowHeight - upOffset;
 
-        if (rect.top < windowHeight - 40) {
+        if (rect.top < triggerPoint) {
             el.classList.add('visible');
         } else {
             el.classList.remove('visible');
         }
     });
+
+    lastScrollY = currentScrollY;
 }
+
+window.addEventListener('scroll', handleScrollReveal1);
+window.addEventListener('load', handleScrollReveal1);
 
 window.addEventListener('scroll', handleScrollReveal1);
 window.addEventListener('load', handleScrollReveal1);
