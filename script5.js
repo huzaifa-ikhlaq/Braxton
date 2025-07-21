@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 bgSvg.classList.add('opacity-100')
             }, 400)
         }, 300)
-    }, 2000)
+    }, 100)
 })
 // 4 3 2
 
