@@ -74,25 +74,26 @@ body {
     width: 0px;
 }
 
-/* Target SVG only on hover */
-.icon-container:hover .icon-svg {
-    animation: bounce-twice 300ms linear;
+/* bg-SVG */
+
+.parallax-svg {
+    transform: translateY(0px);
+    transition: transform 0.1s linear;
+    will-change: transform;
 }
 
-/* Bounce Keyframes */
+/* Bounce forward */
 @keyframes bounce-twice {
     0% {
         transform: translateY(0);
     }
 
-    33.33% {
-        transform: translateY(-16px);
-        opacity: 0;
+    60% {
+        transform: translateY(-200%);
     }
 
-    63.33% {
-        transform: translateY(32px);
-        opacity: 1;
+    61% {
+        transform: translateY(200%);
     }
 
     100% {
@@ -100,6 +101,124 @@ body {
     }
 }
 
+/* Bounce reverse */
+@keyframes bounce-twice-reverse {
+    0% {
+        transform: translateY(0);
+    }
+
+    60% {
+        transform: translateY(200%);
+    }
+
+    61% {
+        transform: translateY(-200%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.icon-svg {
+    transition: transform 0.3s ease;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+/* Add class to trigger forward */
+.icon-svg.bounce {
+    animation-name: bounce-twice;
+}
+
+/* Add class to trigger reverse */
+.icon-svg.bounce-reverse {
+    animation-name: bounce-twice-reverse;
+}
+
+/* jump animation for download btn  */
+/* Forward bounce */
+@keyframes bounce-twiceD {
+    0% {
+        transform: translateY(0);
+    }
+
+    60% {
+        transform: translateY(-100%);
+    }
+
+    61% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+        color: #22232C;
+    }
+}
+
+/* Reverse bounce */
+@keyframes bounce-twice-reverseD {
+    0% {
+        transform: translateY(0);
+    }
+
+    60% {
+        transform: translateY(100%);
+    }
+
+    61% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.bounce-target {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    /* spacing between text and icon */
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+.bounce {
+    animation-name: bounce-twiceD;
+}
+
+.bounce-reverse {
+    animation-name: bounce-twice-reverseD;
+}
+
+.arrow-container:hover .arrow-svg{
+    animation: arrow-bounce 250ms linear;
+}
+/* arrow bounce  */
+@keyframes arrow-bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    60% {
+        transform: translateY(100%);
+    }
+
+    61% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* scroll animation  */
 .reveal-on-scroll {
     opacity: 0;
     transform: translateY(50px);
@@ -115,26 +234,32 @@ body {
     transition-delay: 0.2s;
     transition-duration: 1s;
 }
+
 .reveal-on-scroll.delay2 {
     transition-delay: 0.3s;
     transition-duration: 1s;
 }
+
 .reveal-on-scroll.delay3 {
     transition-delay: 0.4s;
     transition-duration: 1s;
 }
+
 .reveal-on-scroll.delay4 {
     transition-delay: 0.5s;
     transition-duration: 1s;
 }
+
 .reveal-on-scroll.delay5 {
     transition-delay: 0.6s;
     transition-duration: 1s;
 }
+
 .reveal-on-scroll.delay6 {
     transition-delay: 0.7s;
     transition-duration: 1s;
 }
+
 .reveal-on-scroll.delay7 {
     transition-delay: 0.8s;
     transition-duration: 1s;

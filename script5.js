@@ -3,6 +3,7 @@
 let firstPage = document.querySelector('#first-page')
 let mainPage = document.querySelector('#main-page')
 let bgSvg = document.querySelector('#bg-svg')
+let bgSvg2 = document.querySelector('#bg-svg2')
 let heroText = document.querySelector('#heroText')
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -17,11 +18,20 @@ window.addEventListener('DOMContentLoaded', () => {
                 // bg-svg fade in
                 bgSvg.classList.remove('opacity-0')
                 bgSvg.classList.add('opacity-100')
+                bgSvg2.classList.add('opacity-0')
+                bgSvg2.classList.add('opacity-100')
             }, 400)
         }, 300)
     }, 2000)
 })
 // 4 3 2
+
+// bg-svg2 scrolling
+window.addEventListener('scroll', function () {
+    const scrollY = window.scrollY;
+    const svg = document.querySelector('.parallax-svg');
+    svg.style.transform = `translateY(${scrollY * 0.5}px)`; // 0.2 = slower movement
+});
 
 // Toggle theme (dark / light)
 let containerOfSunMoon = document.querySelector('#containerOfSunMoon');
@@ -106,10 +116,10 @@ navItems.forEach(item => {
             item.classList.contains('left-nav-item') &&
             window.innerWidth < 992
         ) {
-            item.classList.add('', 'bg-black');
+            item.classList.add('bg-black', '');
 
             if (activeSvg) {
-                activeSvg.classList.add('text-white', 'dark:text-black');
+                activeSvg.classList.add('dark:text-black', 'text-white');
             }
         }
     });
@@ -268,6 +278,40 @@ function handleScrollReveal1() {
 
 window.addEventListener('scroll', handleScrollReveal1);
 window.addEventListener('load', handleScrollReveal1);
+
+// jump animation for icon 
+document.querySelectorAll('.icon-container').forEach(container => {
+    const svg = container.querySelector('.icon-svg');
+
+    container.addEventListener('mouseenter', () => {
+        svg.classList.remove('bounce-reverse');
+        void svg.offsetWidth; // Reset animation
+        svg.classList.add('bounce');
+    });
+
+    container.addEventListener('mouseleave', () => {
+        svg.classList.remove('bounce');
+        void svg.offsetWidth; // Reset animation
+        svg.classList.add('bounce-reverse');
+    });
+});
+
+// jump animation for download button
+document.querySelectorAll('.icon-container').forEach(button => {
+    const target = button.querySelector('.bounce-target');
+
+    button.addEventListener('mouseenter', () => {
+        target.classList.remove('bounce-reverseD');
+        void target.offsetWidth; // force reflow to restart animation
+        target.classList.add('bounce');
+    });
+
+    button.addEventListener('mouseleave', () => {
+        target.classList.remove('bounce');
+        void target.offsetWidth;
+        target.classList.add('bounce-reverseD');
+    });
+});
 
 // slider 
 
